@@ -1,0 +1,289 @@
+.Main {
+  background-color: white;
+}
+
+.TopBar {
+  padding-left: 5%;
+  padding-right: 5%;
+  display: flex;
+  height: 7rem;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  color: rgb(30, 30, 30);
+  font-size: larger;
+}
+
+.RoundedButton {
+  padding-left: 18px;
+  padding-right: 18px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  margin-left: 10px;
+  border-radius: 38px;
+  border: 2px solid var(--primary);
+  color: var(--primary);
+}
+
+.ButtonBar {
+  display: flex;
+  flex-direction: row;
+}
+
+.Logo {
+  color: var(--primary);
+  font-family: 'Zen Dots';
+  font-size: xx-large;
+}
+
+/*+++++++++++++++++*/
+.Presentation {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0px;
+}
+
+h1 {
+  font-family: 'eurostile', sans-serif;
+  font-size: 42px;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+
+/*
+font-family: 'Zen Dots';
+font-family: 'Titillium Web', sans-serif;
+*/
+
+h2 {
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 100;
+  font-size: 20px;
+  margin-top: -15px;
+}
+
+h3 {
+  margin-top: 0px;
+  font-size:  32px;
+  letter-spacing: 1px;
+  font-family: 'eurostile', sans-serif;
+  font-weight: 300;
+}
+
+.PhotoBackground {
+  margin-top: 40px;
+  background-color: var(--primary);
+  max-width: 260px;
+  min-height: 210px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  border-radius: 900px;
+}
+
+.PhotoBackgroundFace {
+  background-color: var(--secondary);
+  max-width: 200px;
+  max-height: 130px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 10px;
+  padding-top: 5px;
+  border-radius: 100px;
+  box-shadow: var(--commonShadow);
+}
+
+.PhotoBackgroundLaptop {
+  background-color: white;
+  max-width: 20px;
+  max-height: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  border-radius: 900px;
+  margin-top: -70px;
+}
+
+.Photo {
+  max-width: 200px;
+  max-height: 200px;
+}
+
+.PresentationAbstractImage {
+  margin-top: 40px;
+  background: linear-gradient(to top, var(--primary) 5%,
+              rgba(255,255,255, 1) 50%), url(../assets/curved_lines_modified.png);
+  min-height: 260px;
+  margin-bottom: 0px;
+
+}
+
+.FirstSomeWords {
+  background-color: var(--primary);
+  padding-top: 0px;
+  margin-top: 0px;
+  min-height: 800px;
+  background: linear-gradient(to top, rgba(255, 255, 255,0.9) 5%,
+  primary 5.1%);
+
+}
+
+.MyName {
+  padding-top: 100px;
+  color: white;
+  letter-spacing: 1px;
+}
+
+.SomeWords {
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 18px;
+  margin-left: 20%;
+  margin-right: 20%;
+  color: white;
+  text-align: center;
+}
+
+/*********************************************/
+/************  3 Vertical Frames  ************/
+/*********************************************/
+.VerticalFrames {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  min-height: 700px;
+  max-width: 1200px;
+  width: 94%;
+  border-radius: 20px;
+  margin-top: -400px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #FFF;
+  box-shadow: var(--commonShadow);
+  border: 1px solid #DDD;
+}
+
+.VFrame {
+  border-radius: 20px;
+  flex: 1;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-left: 1px;
+  padding-right: 3%;
+  padding-left: 3%;
+}
+
+.VFImage {
+  max-width: 100px;
+  max-height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.VFTitle {
+  color: #111;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 35px;
+}
+
+.VFBody {
+  color: #111;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 10px;
+  line-height: 26px;
+}
+
+.VerticalSeparator {
+  background-color: #DDD;
+  min-width: 1px;
+}
+
+.Subtitle {
+  color: var(--primary);
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 35px;
+}
+
+/*********************************************/
+/************  My Work  ************/
+/*********************************************/
+
+.MyWork {
+  margin-top: 70px;
+}
+
+.CompaniesIWorkedFor {
+  padding-right: 3%;
+  padding-left: 3%;
+  
+}
+
+.CompaniesContainer {
+  display: inline-grid;
+  column-gap: 50px;
+  row-gap: 50px;
+  grid-template-columns: auto auto auto auto;
+
+}
+
+.CompanyLogo {
+  border: 1px solid black;
+}
+
+
+/*********************************************/
+/************  Final words  ************/
+/*********************************************/
+
+.FinalWords {
+  background-color: var(--primary);
+  min-height: 400px;
+  width: 100%;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
+.LogoWhite {
+  color: white;
+  flex: 1;
+  border: 1px solid black;
+}
+
+.SocialNetworkLinks {
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.SNLink {
+  flex: 1;
+  border: 1px solid white;
+  border-radius: 50%;
+  height: 55px;
+  width: 55px;
+  margin-left: 6px;
+  margin-right: 6px;
+  border: 2px solid white;
+}
+
+.UWLink {
+  flex: 1;
+  border: 1px solid white;
+  border-radius: 50%;
+  height: 55px;
+  width: 55px;
+  margin-left: 6px;
+  margin-right: 6px;
+  object-fit: cover;
+  border: 2px solid white;
+}
