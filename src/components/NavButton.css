@@ -1,0 +1,29 @@
+.Container {
+  border-radius: 30px;
+  border: 2px solid red;
+}
+
+.RoundedButton {
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    margin-left: 9px;
+    border-radius: 38px;
+    border: 2px solid rgb(0,160,0);
+    background-color: #FFFFFF;
+    color: rgb(0,160,0);
+    font-size: 18px;
+  }
+
+  .RoundedButton:hover {
+    background-color: #f2f2f2;
+  }
+
+.cellImage {
+  width: 40%;
+  height: 30%;
+  border-radius: 30px;
+  object-fit: contain;
+  object-position: 20% 20%;
+}

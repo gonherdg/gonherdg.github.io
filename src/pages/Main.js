@@ -7,6 +7,8 @@ import upwork from "../assets/upwork_b.png";
 import fiverr from "../assets/fiverr.png";
 //import curvedLines from "../assets/curved_lines_modified.png";
 import WorkCell from "../components/WorkCell";
+import NavButton from "../components/NavButton";
+import ProjectCard from "../components/ProjectCard";
 
 const Main = () => {
   
@@ -16,8 +18,9 @@ const Main = () => {
         {/*<img className="Logo" src="" alt="Gonsoft"/>*/}
         <div className="Logo">Gonzalo Del Gaudio</div>
         <div className="ButtonBar">
-          <div className="RoundedButton">Portfolio</div>
-          <div className="RoundedButton">Contact</div>
+          <NavButton className="RoundedButton" label="Portfolio">Portfolio</NavButton>
+          <NavButton className="RoundedButton" label="Blog">Blog</NavButton>
+          <NavButton className="RoundedButton" label="Contact">Contact</NavButton>
         </div>
       </div>
 
@@ -77,10 +80,10 @@ const Main = () => {
           My Recent Work
         </h3>
         <h2>These are some projects I worked on.</h2>
-        <div className="WorkGrid">
-          <WorkCell ></WorkCell>
-          <WorkCell vari="POP"></WorkCell>
-          <WorkCell vari="Gon"></WorkCell>
+        <div className="ProjectGrid">
+          <ProjectCard title="Memories" imageSrc="https://freefrontend.com/assets/img/css-text-effects/04-11-2022-text-shadow.png"></ProjectCard>
+          <ProjectCard title="CryptoMarket Simulator" imageSrc="https://freefrontend.com/assets/img/css-text-effects/04-11-2022-9-tipps-background-image-for-text.png"></ProjectCard>
+          <ProjectCard title="New Project" imageSrc="https://freefrontend.com/assets/img/css-text-effects/04-11-2022-text-shadow-2.png"></ProjectCard>
         </div>
       </div>
 
