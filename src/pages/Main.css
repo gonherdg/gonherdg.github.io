@@ -36,6 +36,22 @@
   font-size: xx-large;
 }
 
+
+.LangButton {
+  background-color: #0000;
+  justify-content: center;
+  align-self: center;
+  vertical-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+  border: 0px;
+}
+
+.LangButton:hover {
+  color: #777;
+}
+
+
 /*+++++++++++++++++*/
 .Presentation {
   margin-left: auto;
@@ -215,20 +231,28 @@ h3 {
 /*********************************************/
 
 .MyWork {
-  margin-top: 170px;
+  margin-top: 100px;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background-color: #F5F5F5;
+}
+
+.MyWorkTitle {
+  margin-bottom: 50px;
 }
 
 .CompaniesIWorkedFor {
-  margin-top: 170px;
+  margin-top: 100px;
   padding-right: 3%;
   padding-left: 3%;
   
 }
 
 .CompaniesContainer {
+  margin-top: 20px;
   display: inline-grid;
-  column-gap: 50px;
-  row-gap: 50px;
+  column-gap: 60px;
+  row-gap: 90px;
   grid-template-columns: auto auto auto auto;
 
 }
@@ -272,8 +296,8 @@ h3 {
   border-radius: 50%;
   height: 55px;
   width: 55px;
-  margin-left: 6px;
-  margin-right: 6px;
+  margin-left: 16px;
+  margin-right: 16px;
   border: 2px solid white;
 }
 
@@ -283,8 +307,8 @@ h3 {
   border-radius: 50%;
   height: 55px;
   width: 55px;
-  margin-left: 6px;
-  margin-right: 6px;
+  margin-left: 16px;
+  margin-right: 16px;
   object-fit: cover;
   border: 2px solid white;
 }

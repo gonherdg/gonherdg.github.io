@@ -1,0 +1,29 @@
+{
+  "portfolio": "Portfolio",
+  "blog": "Blog",
+  "contact": "Contacto",
+
+  "title": "Desarrollador de Videojuegos y Fullstack",
+  "subtitle": "",
+  "hi": "Hola, soy Gonzalo. Conózcame!",
+  "description": "Desde el comienzo de mi viaje a traves de la computación... ",
+  "frontend": "Frontend",
+  "backend": "Backend",
+  "videogames": "Video Games",
+  "frontend-0": "I like to code things from scratch, and enjoy bringing ideas to life in the browser",
+  "frontend-t1": "Languages & Frameworks",
+  "frontend-1": "HTML, CSS, SCSS, Javascript, Typescript, React.js, Vue.js, Node.js",
+  "frontend-t2": "Programming tools",
+  "frontend-2": "Visual Studio Code, Github, Bitbucket, Bash",
+  "backend-0": "I am a backend dev. =",
+  "backend-t1": "Languages",
+  "backend-1": "Javascript, Typescript",
+  "backend-t2": "Tools and Frameworks",
+  "backend-2": "Node.js, React.js, Vue.js, MySQL, MongoDB",
+  "videogames-0": "My passion and the reason I started coding at my 15'",
+  "videogames-t1": "Game Engines",
+  "videogames-1": "Unity, Godot, Phaser",
+  "videogames-t2": "Experience with",
+  "videogames-2": "- Juegos 2D y 3D, lenguaje C# \n- Animaciones 2D / 3D\n - Música y sonidos, y arreglos con efectos con Audacity (también soy músico)\n - Blender\n - Basic Shaders\n- Networking con Mirror y Sockets\n - Llamadas a APIs\n - Lifecycle\n - Patterns: Singleton - State- Observer - Factory - Object Pool\n - GIT\n - Builds para Android y pre-build iOS"
+}
+
