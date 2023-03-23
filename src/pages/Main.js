@@ -22,6 +22,10 @@ import prosegur_logo from "../assets/companies-logos/prosegur-logo-2.png";
 import innobaires_logo from "../assets/companies-logos/innobaires_logo.png";
 import fdvsolutions_logo from "../assets/companies-logos/fdv_solutions.png";
 
+import socialHub_0 from "../assets/myprojects/SocialHub_2.png";
+import socialHub_1 from "../assets/myprojects/SocialHub_1.png";
+
+
 //import curvedLines from "../assets/curved_lines_modified.png";
 import WorkCell from "../components/WorkCell";
 import NavButton from "../components/NavButton";
@@ -126,7 +130,7 @@ const Main = () => {
           <h2>{t('mywork-sub')}</h2>
           </div>
           <div className="ProjectGrid">
-            <ProjectCard title="Memories" imageSrc="https://freefrontend.com/assets/img/css-text-effects/04-11-2022-text-shadow.png"></ProjectCard>
+            <ProjectCard title="Social Hub" imageSrc={socialHub_0}></ProjectCard>
             <ProjectCard title="CryptoMarket Simulator" imageSrc="https://freefrontend.com/assets/img/css-text-effects/04-11-2022-9-tipps-background-image-for-text.png"></ProjectCard>
             <ProjectCard title="New Project" imageSrc="https://freefrontend.com/assets/img/css-text-effects/04-11-2022-text-shadow-2.png"></ProjectCard>
             <ProjectCard title="Galuxian WIP" imageSrc=""></ProjectCard>
