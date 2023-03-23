@@ -22,7 +22,6 @@ import prosegur_logo from "../assets/companies-logos/prosegur-logo-2.png";
 import innobaires_logo from "../assets/companies-logos/innobaires_logo.png";
 import fdvsolutions_logo from "../assets/companies-logos/fdv_solutions.png";
 
-//import curvedLines from "../assets/curved_lines_modified.png";
 import WorkCell from "../components/WorkCell";
 import NavButton from "../components/NavButton";
 import ProjectCard from "../components/ProjectCard";
@@ -31,14 +30,14 @@ import Company from "../components/Company";
 import { useTranslation } from 'react-i18next';
 import { HashLink as Link } from 'react-router-hash-link';
 
-const Main = () => {
+const Blog = () => {
   const { t } = useTranslation();
   const { i18n } = useTranslation();
 
   function changeLanguage(e) {
     i18n.changeLanguage(e.target.value);
   }
-
+  
   return (
     <div className="App">
       <div className="Main">
@@ -161,12 +160,10 @@ const Main = () => {
 
 
         <div id="contact" className="FinalWords">
-          {!
-            <h3 className="MyName">{t('get-in-touch')}</h3> &&
-            <img className="LogoWhite" src="" alt="LOGO"></img>
-          }
+          <h3 className="MyName">{t('get-in-touch')}</h3>
+          <img className="LogoWhite" src="" alt="LOGO"></img>
           <div className="SocialNetworkLinks">
-            <img className="UWLink" src={linkedin} alt="LinkedIn" title="LinkedIn"></img>
+            <img className="SNLink" src={linkedin} alt="LinkedIn" title="LinkedIn"></img>
             <img className="SNLink" src={github} alt="Github" title="Github"></img>
             <img className="UWLink" src={upwork} alt="UpWork" title="UpWork"></img>
             <img className="UWLink" src={fiverr} alt="Fiverr" title="Fiverr"></img>
@@ -178,4 +175,4 @@ const Main = () => {
   );
 }
 
-export default Main;
+export default Blog;

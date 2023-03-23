@@ -2,6 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+import Main from './pages/Main';
+import Blog from './pages/Blog';
 import reportWebVitals from './reportWebVitals';
 import './i18n/config';
 import {
@@ -12,7 +14,11 @@ import {
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App/>,
+    element: <Main/>,
+  },
+  {
+    path: "/blog",
+    element: <Blog/>,
   },
 ]);
 
