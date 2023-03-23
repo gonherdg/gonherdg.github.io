@@ -24,6 +24,11 @@
   "videogames-t1": "Game Engines",
   "videogames-1": "Unity, Godot, Phaser",
   "videogames-t2": "Experience with",
-  "videogames-2": "- Juegos 2D y 3D, lenguaje C# \n- Animaciones 2D / 3D\n - Música y sonidos, y arreglos con efectos con Audacity (también soy músico)\n - Blender\n - Basic Shaders\n- Networking con Mirror y Sockets\n - Llamadas a APIs\n - Lifecycle\n - Patterns: Singleton - State- Observer - Factory - Object Pool\n - GIT\n - Builds para Android y pre-build iOS"
+  "videogames-2": "- 2D & 3D games, C# \n- 2D/3D animations\n - Music & FX\n - Blender\n - Basic Shaders\n- Networking with Mirror and Sockets\n - API calls\n - Lifecycle\n - Patterns: Singleton - State- Observer - Factory - Object Pool\n - GIT\n - Builds for Android and  pre-build iOS",
+  "mywork": "My recent work",
+  "mywork-sub": "These are some projects I worked on",
+  "source-code": "</> Source code",
+  "companies": "I'm proud to have collaborated with some awesome companies:",
+  "get-in-touch": "Let's get in touch!"
 }
 

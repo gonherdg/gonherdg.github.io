@@ -56,8 +56,8 @@ const Main = () => {
       </div>
 
       <div className="Presentation">
-        <h1>Fullstack & Video Game Developer</h1>
-        <h2>I make things work and move smoothly.</h2>
+        <h1>{t('title')}</h1>
+        <h2>{t('subtitle')}</h2>
         <div className="PhotoBackground">
           <div className="PhotoBackgroundFace">
             <img src={programmer} className="Photo" alt="logo" />
@@ -70,48 +70,52 @@ const Main = () => {
       </div>
 
       <div className="FirstSomeWords">
-        <h3 className="MyName">Hi, I'm Gonzalo. Nice to meet you.</h3>
-        <p className="SomeWords">Since beginning my joirney as a freelance Fullstack nearly 10 years ago, I've done remote work for agencies, consulted for startups, and collaborated with talented people to create digital products for both business and consumer use. I'm quitely confident, naturally curious, and perpetually working on improving my chops one design problem at a time.</p>
+        <h3 className="MyName">{t('hi')}</h3>
+        <p className="SomeWords">{t('description')}</p>
       </div>
 
       <div className="VerticalFrames">
         <div className="VFrame">
           <img src={frontend_icon_b} className="VFImage" alt="logo" />
-          <div className="VFTitle">Frontend</div>
-          <div className="VFBody">I like to code things from scratch, and enjoy bringing ideas to life in the browser</div>
-          <div className="Subtitle">Languages & Frameworks</div>
-          <div className="VFBody">HTML, CSS, SCSS, Javascript, Typescript, React.js, Vue.js, Node.js</div>
-          <div className="Subtitle">Programming tools</div>
-          <div className="VFBody">Visual Studio Code, Github, Bitbucket, Bash</div>
+          <div className="VFTitle">{t('frontend')}</div>
+          <div className="VFBody">{t('frontend-0')}</div>
+          <div className="Subtitle">{t('frontend-t1')}</div>
+          <div className="VFBody">{t('frontend-1')}</div>
+          <div className="Subtitle">{t('frontend-t2')}</div>
+          <div className="VFBody">{t('frontend-2')}</div>
         </div>
 
         <div className="VerticalSeparator"></div>
 
         <div className="VFrame">
           <img src={backend_icon_b} className="VFImage" alt="logo" />
-          <div className="VFTitle">Backend</div>
-          <div className="VFBody">I am a backend dev. =</div>
-          <div className="Subtitle">Languages</div>
-          <div className="VFBody">Javascript, Typescript</div>
-          <div className="Subtitle">Tools and Frameworks</div>
-          <div className="VFBody">Node.js, React.js, Vue.js, MySQL, MongoDB</div>
+          <div className="VFTitle">{t('backend')}</div>
+          <div className="VFBody">{t('backend-0')}</div>
+          <div className="Subtitle">{t('backend-t1')}</div>
+          <div className="VFBody">{t('backend-1')}</div>
+          <div className="Subtitle">{t('backend-t2')}</div>
+          <div className="VFBody">{t('backend-2')}</div>
         </div>
 
         <div className="VerticalSeparator"></div>
 
         <div className="VFrame">
           <img src={game_icon} className="VFImage" alt="logo" />
-          <div className="VFTitle">Video Games</div>
-          <div className="VFBody">My passion and the reason I started coding at my 15'</div>
-        </div>
+          <div className="VFTitle">{t('videogames')}</div>
+          <div className="VFBody">{t('videogames-0')}</div>
+          <div className="Subtitle">{t('videogames-t1')}</div>
+          <div className="VFBody">{t('videogames-1')}</div>
+          <div className="Subtitle">{t('videogames-t2')}</div>
+          <div className="VFBody">{t('videogames-2')}</div>
+       </div>
       </div>
 
       <div id="portfolio" className="MyWork">
         <div className="MyWorkTitle">
         <h3>
-          My Recent Work
+          {t('mywork')}
         </h3>
-        <h2>These are some projects I worked on</h2>
+        <h2>{t('mywork-sub')}</h2>
         </div>
         <div className="ProjectGrid">
           <ProjectCard title="Memories" imageSrc="https://freefrontend.com/assets/img/css-text-effects/04-11-2022-text-shadow.png"></ProjectCard>
@@ -137,7 +141,7 @@ const Main = () => {
 
       <div className="CompaniesIWorkedFor">
         <h3 className="MyWorkTitle">
-          I'm proud to have collaborated with some awesome companies:
+          {t('companies')}
         </h3>
         <div className="CompaniesContainer">
           <Company name="" imageSrc={accenture_logo}></Company>
@@ -152,7 +156,7 @@ const Main = () => {
       </div>
 
       <div id="contact" className="FinalWords">
-        <h3 className="MyName">Let's get in touch!</h3>
+        <h3 className="MyName">{t('get-in-touch')}</h3>
         <img className="LogoWhite" src="" alt="LOGO"></img>
         <div className="SocialNetworkLinks">
           <img className="SNLink" src={linkedin} alt="LinkedIn" title="LinkedIn"></img>
