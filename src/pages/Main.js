@@ -1,11 +1,17 @@
 import "../App.css";
 import "./Main.css";
 
-import programmer from "../assets/programmer.png";
-import github from "../assets/github.png";
-import linkedin from "../assets/linkedin_c.png";
-import upwork from "../assets/upwork_b.png";
-import fiverr from "../assets/fiverr.png";
+import programmer from "../assets/icons/programmer.png";
+import frontend_icon from "../assets/icons/ux.png";
+import frontend_icon_b from "../assets/icons/responsive-design.png";
+import backend_icon from "../assets/icons/backend.png";
+import backend_icon_b from "../assets/icons/web-settings.png";
+import game_icon from "../assets/icons/3d-game.png";
+
+import github from "../assets/social-logos/github.png";
+import linkedin from "../assets/social-logos/linkedin_c.png";
+import upwork from "../assets/social-logos/upwork_b.png";
+import fiverr from "../assets/social-logos/fiverr.png";
 
 import accenture_logo from "../assets/companies-logos/Accenture-logo.png";
 import softrc_logo from "../assets/companies-logos/soft_rc_logo_n.png";
@@ -69,7 +75,7 @@ const Main = () => {
 
       <div className="VerticalFrames">
         <div className="VFrame">
-          <img src={programmer} className="VFImage" alt="logo" />
+          <img src={frontend_icon_b} className="VFImage" alt="logo" />
           <div className="VFTitle">Frontend</div>
           <div className="VFBody">I like to code things from scratch, and enjoy bringing ideas to life in the browser</div>
           <div className="Subtitle">Languages & Frameworks</div>
@@ -81,7 +87,7 @@ const Main = () => {
         <div className="VerticalSeparator"></div>
 
         <div className="VFrame">
-          <img src={programmer} className="VFImage" alt="logo" />
+          <img src={backend_icon_b} className="VFImage" alt="logo" />
           <div className="VFTitle">Backend</div>
           <div className="VFBody">I am a backend dev. =</div>
           <div className="Subtitle">Languages</div>
@@ -93,7 +99,7 @@ const Main = () => {
         <div className="VerticalSeparator"></div>
 
         <div className="VFrame">
-          <img src={programmer} className="VFImage" alt="logo" />
+          <img src={game_icon} className="VFImage" alt="logo" />
           <div className="VFTitle">Video Games</div>
           <div className="VFBody">My passion and the reason I started coding at my 15'</div>
         </div>
