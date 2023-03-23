@@ -171,10 +171,10 @@ const Main = () => {
             <img className="LogoWhite" src="" alt="LOGO"></img>
           }
           <div className="SocialNetworkLinks">
-            <a target="_blank" href={linkedinProfileLink}><img className="UWLink" src={linkedin} alt="LinkedIn" title="LinkedIn"></img></a>
-            <a target="_blank" href={githubProfileLink}><img className="SNLink" src={github} alt="Github" title="Github"></img></a>
-            <a target="_blank" href={upworkProfileLink}><img className="UWLink" src={upwork} alt="UpWork" title="UpWork"></img></a>
-            <a target="_blank" href={fiverrProfileLink}><img className="UWLink" src={fiverr} alt="Fiverr" title="Fiverr"></img></a>
+            <a target="_blank" href={linkedinProfileLink}><img className="UWLink" src={linkedin} alt="LinkedIn" title="My LinkedIn profile"></img></a>
+            <a target="_blank" href={githubProfileLink}><img className="SNLink" src={github} alt="Github" title="My Github profile"></img></a>
+            <a target="_blank" href={upworkProfileLink}><img className="UWLink" src={upwork} alt="UpWork" title="My UpWork profile"></img></a>
+            <a target="_blank" href={fiverrProfileLink}><img className="UWLink" src={fiverr} alt="Fiverr" title="My Fiverr profile"></img></a>
           </div>
         </div>
 

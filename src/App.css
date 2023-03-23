@@ -16,6 +16,9 @@
   --primary: #10A050F9;/* #7510F7F9; /* #1e90ff; */
   --secondary: #FFF; /* #FDC; */
   --terceary: #282c34;
+  --colorA: #A01050F9;
+  --colorB: #F5F5F5;
+  --colorC: #222;
   --commonShadow: 1px 1px 6px #ccc2, -1px -1px 6px #ccc2, 1px -1px 6px #ccc2, -1px 1px 6px #ccc2;
 }
 
