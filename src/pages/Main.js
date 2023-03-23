@@ -16,7 +16,6 @@ import prosegur_logo from "../assets/companies-logos/prosegur-logo-2.png";
 import innobaires_logo from "../assets/companies-logos/innobaires_logo.png";
 import fdvsolutions_logo from "../assets/companies-logos/fdv_solutions.png";
 
-
 //import curvedLines from "../assets/curved_lines_modified.png";
 import WorkCell from "../components/WorkCell";
 import NavButton from "../components/NavButton";
@@ -113,9 +112,19 @@ const Main = () => {
           <ProjectCard title="New Project" imageSrc="https://freefrontend.com/assets/img/css-text-effects/04-11-2022-text-shadow-2.png"></ProjectCard>
           <ProjectCard title="Galuxian WIP" imageSrc=""></ProjectCard>
           <ProjectCard title="Truco Online WIP" imageSrc=""></ProjectCard>
-          <ProjectCard title="" imageSrc=""></ProjectCard>
-          <ProjectCard title="" imageSrc=""></ProjectCard>
-          <ProjectCard title="" imageSrc=""></ProjectCard>
+          <ProjectCard title="Dr. Mario Clone" imageSrc=""></ProjectCard>
+          <ProjectCard title="Ruleta" imageSrc=""></ProjectCard>
+          <ProjectCard title="Aprendo la hora" imageSrc=""></ProjectCard>
+          <ProjectCard title="Word finder" imageSrc=""></ProjectCard>
+          <ProjectCard title="Shot in the Dark" imageSrc=""></ProjectCard>
+          <ProjectCard title="A las ñapis" imageSrc=""></ProjectCard>
+          <ProjectCard title="Siv" imageSrc=""></ProjectCard>
+          <ProjectCard title="OpenVoxelEditor" imageSrc=""></ProjectCard>
+          <ProjectCard title="B9" imageSrc=""></ProjectCard>
+          <ProjectCard title="Tiburon3D" imageSrc=""></ProjectCard>
+          <ProjectCard title="Portaloid" imageSrc=""></ProjectCard>
+          <ProjectCard title="Tiny Art" imageSrc=""></ProjectCard>
+          <ProjectCard title="Mio Kill" imageSrc=""></ProjectCard>
         </div>
       </div>
 
