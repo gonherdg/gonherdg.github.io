@@ -29,6 +29,7 @@ import ProjectCard from "../components/ProjectCard";
 import Company from "../components/Company";
 
 import { useTranslation } from 'react-i18next';
+import { HashLink as Link } from 'react-router-hash-link';
 
 const Main = () => {
   const { t } = useTranslation();
@@ -48,9 +49,9 @@ const Main = () => {
             <button className='LangButton' onClick={changeLanguage} value='en'>English</button>
             <button className='LangButton' onClick={changeLanguage} value='es'>Español</button>
           </div>
-          <NavButton className="RoundedButton" label={t('portfolio')}></NavButton>
-          <NavButton className="RoundedButton" label={t('blog')}></NavButton>
-          <NavButton className="RoundedButton" label={t('contact')}></NavButton>
+          <NavButton className="RoundedButton" label={t('portfolio')} linkTo="/#portfolio"></NavButton>
+          <NavButton className="RoundedButton" label={t('blog')} linkTo="/blog"></NavButton>
+          <NavButton className="RoundedButton" label={t('contact')} linkTo="/#contact"></NavButton>
         </div>
       </div>
 
@@ -105,7 +106,7 @@ const Main = () => {
         </div>
       </div>
 
-      <div className="MyWork">
+      <div id="portfolio" className="MyWork">
         <div className="MyWorkTitle">
         <h3>
           My Recent Work
@@ -150,13 +151,14 @@ const Main = () => {
         </div>
       </div>
 
-      <div className="FinalWords">
-      <img className="LogoWhite" src="" alt="LOGO"></img>
+      <div id="contact" className="FinalWords">
+        <h3 className="MyName">Let's get in touch!</h3>
+        <img className="LogoWhite" src="" alt="LOGO"></img>
         <div className="SocialNetworkLinks">
-          <img className="SNLink" src={linkedin} alt="LinkedIn"></img>
-          <img className="SNLink" src={github} alt="Github"></img>
-          <img className="UWLink" src={upwork} alt="UpWork"></img>
-          <img className="UWLink" src={fiverr} alt="Fiverr"></img>
+          <img className="SNLink" src={linkedin} alt="LinkedIn" title="LinkedIn"></img>
+          <img className="SNLink" src={github} alt="Github" title="Github"></img>
+          <img className="UWLink" src={upwork} alt="UpWork" title="UpWork"></img>
+          <img className="UWLink" src={fiverr} alt="Fiverr" title="Fiverr"></img>
         </div>
       </div>
 
