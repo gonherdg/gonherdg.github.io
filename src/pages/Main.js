@@ -35,6 +35,11 @@ const Main = () => {
   const { t } = useTranslation();
   const { i18n } = useTranslation();
 
+  const linkedinProfileLink = "https://www.linkedin.com/in/gonzalodelgaudio/";
+  const upworkProfileLink = "https://www.upwork.com/freelancers/~015bb5c8a4a1b92f4a";
+  const githubProfileLink= "https://github.com/gonherdg";
+  const fiverrProfileLink = "https://www.fiverr.com/gonzahdg";
+
   function changeLanguage(e) {
     i18n.changeLanguage(e.target.value);
   }
@@ -166,10 +171,10 @@ const Main = () => {
             <img className="LogoWhite" src="" alt="LOGO"></img>
           }
           <div className="SocialNetworkLinks">
-            <img className="UWLink" src={linkedin} alt="LinkedIn" title="LinkedIn"></img>
-            <img className="SNLink" src={github} alt="Github" title="Github"></img>
-            <img className="UWLink" src={upwork} alt="UpWork" title="UpWork"></img>
-            <img className="UWLink" src={fiverr} alt="Fiverr" title="Fiverr"></img>
+            <a target="_blank" href={linkedinProfileLink}><img className="UWLink" src={linkedin} alt="LinkedIn" title="LinkedIn"></img></a>
+            <a target="_blank" href={githubProfileLink}><img className="SNLink" src={github} alt="Github" title="Github"></img></a>
+            <a target="_blank" href={upworkProfileLink}><img className="UWLink" src={upwork} alt="UpWork" title="UpWork"></img></a>
+            <a target="_blank" href={fiverrProfileLink}><img className="UWLink" src={fiverr} alt="Fiverr" title="Fiverr"></img></a>
           </div>
         </div>
 
