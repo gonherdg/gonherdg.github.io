@@ -22,9 +22,17 @@ import prosegur_logo from "../assets/companies-logos/prosegur-logo-2.png";
 import innobaires_logo from "../assets/companies-logos/innobaires_logo.png";
 import fdvsolutions_logo from "../assets/companies-logos/fdv_solutions.png";
 
+// Import assets for showing my work
+import commingSoon from "../assets/myprojects/dummy_600x400_ffffff_cccccc_coming-soon.png";
 import socialHub_0 from "../assets/myprojects/SocialHub_2.png";
 import socialHub_1 from "../assets/myprojects/SocialHub_1.png";
 import investorSim from "../assets/myprojects/InvestorSim.png";
+import aprendoLaHora_0 from "../assets/myprojects/Aprendo la hora/Aprendo La Hora Mickey InGame.png";
+import poc_avion_0 from "../assets/myprojects/PoC Avion/avion-2.jpg";
+import poc_portals_0 from "../assets/myprojects/PoC Portales/godot-portaloid-scene-6.jpg";
+import poc_terrain_0 from "../assets/myprojects/Terrenos Godot/nivel_pvp.png";
+
+
 
 
 //import curvedLines from "../assets/curved_lines_modified.png";
@@ -133,21 +141,28 @@ const Main = () => {
           <div className="ProjectGrid">
             <ProjectCard title="Social Hub" imageSrc={socialHub_0}></ProjectCard>
             <ProjectCard title="Investor Simulator" imageSrc={investorSim}></ProjectCard>
-            <ProjectCard title="Aprendo la hora" imageSrc=""></ProjectCard>
-            <ProjectCard title="A las ñapis" imageSrc=""></ProjectCard>
-            <ProjectCard title="Portaloid" imageSrc=""></ProjectCard>
-            <ProjectCard title="Shot in the Dark" imageSrc=""></ProjectCard>
-            <ProjectCard title="B9" imageSrc=""></ProjectCard>
-            <ProjectCard title="Dr. Mario Clone" imageSrc=""></ProjectCard>
-            <ProjectCard title="Ruleta" imageSrc=""></ProjectCard>
-            <ProjectCard title="Word finder" imageSrc=""></ProjectCard>
-            <ProjectCard title="Siv" imageSrc=""></ProjectCard>
-            <ProjectCard title="Tiburon3D" imageSrc=""></ProjectCard>
-            <ProjectCard title="Galuxian WIP" imageSrc=""></ProjectCard>
-            <ProjectCard title="Tiny Art" imageSrc=""></ProjectCard>
-            <ProjectCard title="Truco Online WIP" imageSrc=""></ProjectCard>
-            <ProjectCard title="Mio Kill" imageSrc=""></ProjectCard>
-            <ProjectCard title="OpenVoxelEditor" imageSrc=""></ProjectCard>
+            <ProjectCard title="Unity: Aprendo la hora" imageSrc={aprendoLaHora_0}></ProjectCard>
+            <ProjectCard title={"Godot 4 - PoC:\nProcedural terrain"} imageSrc={poc_terrain_0}></ProjectCard>
+            <ProjectCard title={"Godot 4 - PoC:\nSpaceship movements"} imageSrc={poc_avion_0}></ProjectCard>
+            <ProjectCard title={"Godot 4 - PoC:\nPortals"} imageSrc={poc_portals_0}></ProjectCard>
+            <ProjectCard title="Unity: Memotest" imageSrc={commingSoon}></ProjectCard>
+            <ProjectCard title="Unity: Trivia" imageSrc={commingSoon}></ProjectCard>
+            <ProjectCard title="Unity: Puzzle" imageSrc={commingSoon}></ProjectCard>
+            <ProjectCard title="Unity: Complete the concept" imageSrc={commingSoon}></ProjectCard>
+            <ProjectCard title="Unity: Simon" imageSrc={commingSoon}></ProjectCard>
+            <ProjectCard title="A las ñapis" imageSrc={commingSoon}></ProjectCard>
+            <ProjectCard title="Shot in the Dark" imageSrc={commingSoon}></ProjectCard>
+            <ProjectCard title="B9" imageSrc={commingSoon}></ProjectCard>
+            <ProjectCard title="Dr. Mario Clone" imageSrc={commingSoon}></ProjectCard>
+            <ProjectCard title="Ruleta" imageSrc={commingSoon}></ProjectCard>
+            <ProjectCard title="Word finder" imageSrc={commingSoon}></ProjectCard>
+            <ProjectCard title="Siv" imageSrc={commingSoon}></ProjectCard>
+            <ProjectCard title="Tiburon3D" imageSrc={commingSoon}></ProjectCard>
+            <ProjectCard title="Galuxian WIP" imageSrc={commingSoon}></ProjectCard>
+            <ProjectCard title="Tiny Art" imageSrc={commingSoon}></ProjectCard>
+            <ProjectCard title="Truco Online WIP" imageSrc={commingSoon}></ProjectCard>
+            <ProjectCard title="Mio Kill" imageSrc={commingSoon}></ProjectCard>
+            <ProjectCard title="OpenVoxelEditor" imageSrc={commingSoon}></ProjectCard>
           </div>
         </div>
 

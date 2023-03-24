@@ -1,0 +1,6 @@
+Project description
+Unicef asked for a game for children where they play while answering to various questions from a roulette-form trivia, showing them information about society and family.
+
+I went trough the process of 2d game making from scratch for two days, with participation of a graphic designer partner.
+
+Project was finished successfully and delivered in time, running perfectly in Windows 10 in a touch screen monitor.
