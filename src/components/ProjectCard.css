@@ -30,7 +30,7 @@
   font-weight: bold;
   color: #fff;
   text-align: center;
-  background-color: #595;
+  background-color: var(--primary);
   text-decoration: none;
   display: flex;
   justify-content: center;
@@ -40,7 +40,7 @@
 
 
 .ProjectCard__code-link:hover {
-  background-color: #5b5;
+  background-color: #10C050F9;
 }
 
 
@@ -50,7 +50,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 10px 0 10px;
+  padding: 0 5px 0 5px;
 }
 
 .ProjectCard__barButton {

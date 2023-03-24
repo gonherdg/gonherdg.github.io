@@ -9,7 +9,10 @@ function ProjectCard(props) {
               <a href={webLink} target="_blank"><img src={imageSrc} alt={title} className="ProjectCard__image" /></a>
               <div className="ProjectCard__bar">
                 <a href={codeLink} target="_blank"><div className="ProjectCard__title">{title}</div></a>
+                <div className="ProjectCard__bar">
+                <a href={codeLink} target="_blank" rel="noopener noreferrer" className="ProjectCard__code-link">+info</a>
                 <a href={codeLink} target="_blank" rel="noopener noreferrer" className="ProjectCard__code-link">&lt;/&gt;</a>
+                </div>
               </div>
           </div>
         );
