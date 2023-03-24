@@ -1,7 +1,7 @@
 .ProjectCard {
   width: 300px;
   margin-bottom: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   overflow: hidden;
     white-space: pre-line;
@@ -19,6 +19,8 @@
   font-weight: bold;
   color: #333;
   text-align: center;
+  display: flex;
+  align-content: center;
 }
 
 .ProjectCard__code-link {
@@ -26,13 +28,31 @@
   padding: 10px;
   font-size: 16px;
   font-weight: bold;
-  color: #555;
+  color: #fff;
   text-align: center;
-  background-color: #eee;
+  background-color: #595;
   text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
+
 
 .ProjectCard__code-link:hover {
-  background-color: #ddd;
+  background-color: #5b5;
 }
 
+
+.ProjectCard__bar {
+  height: 64px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px 0 10px;
+}
+
+.ProjectCard__barButton {
+  
+}
