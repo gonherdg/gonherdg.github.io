@@ -139,8 +139,8 @@ const Main = () => {
           <h2>{t('mywork-sub')}</h2>
           </div>
           <div className="ProjectGrid">
-            <ProjectCard title="Social Hub" imageSrc={socialHub_0}></ProjectCard>
-            <ProjectCard title="Investor Simulator" imageSrc={investorSim}></ProjectCard>
+            <ProjectCard title="Social Hub" imageSrc={socialHub_0} sourceLink="https://github.com/gonherdg/react-social-hub"></ProjectCard>
+            <ProjectCard title="Investor Simulator" imageSrc={investorSim} sourceLink="https://github.com/gonherdg/invest-sim-react-native"></ProjectCard>
             <ProjectCard title="Unity: Aprendo la hora" imageSrc={aprendoLaHora_0}></ProjectCard>
             <ProjectCard title={"Godot 4 - PoC:\nProcedural terrain"} imageSrc={poc_terrain_0}></ProjectCard>
             <ProjectCard title={"Godot 4 - PoC:\nSpaceship movements"} imageSrc={poc_avion_0}></ProjectCard>
