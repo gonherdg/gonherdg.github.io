@@ -24,6 +24,7 @@ import fdvsolutions_logo from "../assets/companies-logos/fdv_solutions.png";
 
 import socialHub_0 from "../assets/myprojects/SocialHub_2.png";
 import socialHub_1 from "../assets/myprojects/SocialHub_1.png";
+import investorSim from "../assets/myprojects/InvestorSim.png";
 
 
 //import curvedLines from "../assets/curved_lines_modified.png";
@@ -131,23 +132,22 @@ const Main = () => {
           </div>
           <div className="ProjectGrid">
             <ProjectCard title="Social Hub" imageSrc={socialHub_0}></ProjectCard>
-            <ProjectCard title="CryptoMarket Simulator" imageSrc="https://freefrontend.com/assets/img/css-text-effects/04-11-2022-9-tipps-background-image-for-text.png"></ProjectCard>
-            <ProjectCard title="New Project" imageSrc="https://freefrontend.com/assets/img/css-text-effects/04-11-2022-text-shadow-2.png"></ProjectCard>
-            <ProjectCard title="Galuxian WIP" imageSrc=""></ProjectCard>
-            <ProjectCard title="Truco Online WIP" imageSrc=""></ProjectCard>
+            <ProjectCard title="Investor Simulator" imageSrc={investorSim}></ProjectCard>
+            <ProjectCard title="Aprendo la hora" imageSrc=""></ProjectCard>
+            <ProjectCard title="A las ñapis" imageSrc=""></ProjectCard>
+            <ProjectCard title="Portaloid" imageSrc=""></ProjectCard>
+            <ProjectCard title="Shot in the Dark" imageSrc=""></ProjectCard>
+            <ProjectCard title="B9" imageSrc=""></ProjectCard>
             <ProjectCard title="Dr. Mario Clone" imageSrc=""></ProjectCard>
             <ProjectCard title="Ruleta" imageSrc=""></ProjectCard>
-            <ProjectCard title="Aprendo la hora" imageSrc=""></ProjectCard>
             <ProjectCard title="Word finder" imageSrc=""></ProjectCard>
-            <ProjectCard title="Shot in the Dark" imageSrc=""></ProjectCard>
-            <ProjectCard title="A las ñapis" imageSrc=""></ProjectCard>
             <ProjectCard title="Siv" imageSrc=""></ProjectCard>
-            <ProjectCard title="OpenVoxelEditor" imageSrc=""></ProjectCard>
-            <ProjectCard title="B9" imageSrc=""></ProjectCard>
             <ProjectCard title="Tiburon3D" imageSrc=""></ProjectCard>
-            <ProjectCard title="Portaloid" imageSrc=""></ProjectCard>
+            <ProjectCard title="Galuxian WIP" imageSrc=""></ProjectCard>
             <ProjectCard title="Tiny Art" imageSrc=""></ProjectCard>
+            <ProjectCard title="Truco Online WIP" imageSrc=""></ProjectCard>
             <ProjectCard title="Mio Kill" imageSrc=""></ProjectCard>
+            <ProjectCard title="OpenVoxelEditor" imageSrc=""></ProjectCard>
           </div>
         </div>
 
