@@ -36,6 +36,11 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  border: none;
+}
+
+.Disabled {
+  background-color: #777;
 }
 
 
@@ -43,6 +48,10 @@
   background-color: #10C050F9;
 }
 
+.Disabled:hover {
+  background-color: #777;
+  cursor: default;
+}
 
 .ProjectCard__bar {
   height: 64px;

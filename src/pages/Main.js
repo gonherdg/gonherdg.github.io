@@ -1,6 +1,9 @@
 import "../App.css";
 import "./Main.css";
 
+import React, { useState } from "react";
+import ProjectDescriptionModal from "../components/ProjectDescriptionModal";
+
 import programmer from "../assets/icons/programmer.png";
 import frontend_icon from "../assets/icons/ux.png";
 import frontend_icon_b from "../assets/icons/responsive-design.png";
@@ -48,6 +51,8 @@ const Main = () => {
   const { t } = useTranslation();
   const { i18n } = useTranslation();
 
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   const linkedinProfileLink = "https://www.linkedin.com/in/gonzalodelgaudio/";
   const upworkProfileLink = "https://www.upwork.com/freelancers/~015bb5c8a4a1b92f4a";
   const githubProfileLink= "https://github.com/gonherdg";
@@ -55,6 +60,15 @@ const Main = () => {
 
   function changeLanguage(e) {
     i18n.changeLanguage(e.target.value);
+  }
+
+  const openModal =  () => {
+    console.log("Open modal...")
+    setIsModalOpen(true);
+  }
+
+  const closeModal = () =>  {
+    setIsModalOpen(false);
   }
 
   return (
@@ -139,11 +153,11 @@ const Main = () => {
           <h2>{t('mywork-sub')}</h2>
           </div>
           <div className="ProjectGrid">
-            <ProjectCard title="Social Hub" imageSrc={socialHub_0} sourceLink="https://github.com/gonherdg/react-social-hub"></ProjectCard>
-            <ProjectCard title="Investor Simulator" imageSrc={investorSim} sourceLink="https://github.com/gonherdg/invest-sim-react-native"></ProjectCard>
-            <ProjectCard title="Unity: Aprendo la hora" imageSrc={aprendoLaHora_0}></ProjectCard>
-            <ProjectCard title={"Godot 4 - PoC:\nProcedural terrain"} imageSrc={poc_terrain_0}></ProjectCard>
-            <ProjectCard title={"Godot 4 - PoC:\nSpaceship movements"} imageSrc={poc_avion_0}></ProjectCard>
+            <ProjectCard title="Social Hub" imageSrc={socialHub_0} sourceLink="https://github.com/gonherdg/react-social-hub" description="(Project description)"></ProjectCard>
+            <ProjectCard title="Investor Simulator" imageSrc={investorSim} sourceLink="https://github.com/gonherdg/invest-sim-react-native" description="(Project description)"></ProjectCard>
+            <ProjectCard title="Unity: Aprendo la hora" imageSrc={aprendoLaHora_0} description=""></ProjectCard>
+            <ProjectCard title={"Godot 4 - PoC:\nProcedural terrain"} imageSrc={poc_terrain_0} description=""></ProjectCard>
+            <ProjectCard title={"Godot 4 - PoC:\nSpaceship movements"} imageSrc={poc_avion_0} description=""></ProjectCard>
             <ProjectCard title={"Godot 4 - PoC:\nPortals"} imageSrc={poc_portals_0}></ProjectCard>
             <ProjectCard title="Unity: Memotest" imageSrc={commingSoon}></ProjectCard>
             <ProjectCard title="Unity: Trivia" imageSrc={commingSoon}></ProjectCard>
