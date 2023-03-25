@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
-import './ProjectCard.css';
-import ProjectDescriptionModal from "./ProjectDescriptionModal";
+import './styles.css';
+import DescriptionModal from "../DescriptionModal/DescriptionModal.js";
 
 function ProjectCard(props) {
     const { title, imageSrc, webLink, sourceLink, description } = props;
@@ -32,7 +32,7 @@ function ProjectCard(props) {
                 </div>
               </div>
         
-      {description && isModalOpen && <ProjectDescriptionModal isOpen={true} onClose={closeModal} title={title} imageSrc={imageSrc} description={description}/>}
+      {description && isModalOpen && <DescriptionModal isOpen={true} onClose={closeModal} title={title} imageSrc={imageSrc} description={description}/>}
           </div>
         );
 }

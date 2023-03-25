@@ -1,7 +1,6 @@
 import { useState } from "react";
-import "./WorkCell.css"
-//import "../pages/Main.css"
-import "./NavButton.css"
+//import "./WorkCell.css"
+import "./styles.css"
 import { HashLink as Link } from 'react-router-hash-link';
 
 const NavButton = ({label, linkTo}) => {
