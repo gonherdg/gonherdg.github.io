@@ -35,8 +35,11 @@ import poc_avion_0 from "../assets/myprojects/PoC Avion/avion-2.jpg";
 import poc_portals_0 from "../assets/myprojects/PoC Portales/godot-portaloid-scene-6.jpg";
 import poc_terrain_0 from "../assets/myprojects/Terrenos Godot/nivel_pvp.png";
 
-
-
+import simon_0 from "../assets/myprojects/Minijuegos/simon-0.jpg";
+import trivia_0 from "../assets/myprojects/Minijuegos/trivia-0.jpg";
+import puzzle_0 from "../assets/myprojects/Minijuegos/puzzle-2.jpg";
+import unir_0 from "../assets/myprojects/Minijuegos/unir-1.jpg";
+import memo_0 from "../assets/myprojects/Minijuegos/memo-0.jpg";
 
 //import curvedLines from "../assets/curved_lines_modified.png";
 import WorkCell from "../components/WorkCell";
@@ -159,11 +162,11 @@ const Main = () => {
             <ProjectCard title={"Godot 4 - PoC:\nProcedural terrain"} imageSrc={poc_terrain_0} description=""></ProjectCard>
             <ProjectCard title={"Godot 4 - PoC:\nSpaceship movements"} imageSrc={poc_avion_0} description=""></ProjectCard>
             <ProjectCard title={"Godot 4 - PoC:\nPortals"} imageSrc={poc_portals_0}></ProjectCard>
-            <ProjectCard title="Unity: Memotest" imageSrc={commingSoon}></ProjectCard>
-            <ProjectCard title="Unity: Trivia" imageSrc={commingSoon}></ProjectCard>
-            <ProjectCard title="Unity: Puzzle" imageSrc={commingSoon}></ProjectCard>
-            <ProjectCard title="Unity: Complete the concept" imageSrc={commingSoon}></ProjectCard>
-            <ProjectCard title="Unity: Simon" imageSrc={commingSoon}></ProjectCard>
+            <ProjectCard title="Unity: Memotest" imageSrc={memo_0}></ProjectCard>
+            <ProjectCard title="Unity: Trivia" imageSrc={trivia_0}></ProjectCard>
+            <ProjectCard title="Unity: Puzzle" imageSrc={puzzle_0}></ProjectCard>
+            <ProjectCard title="Unity: Complete the concept" imageSrc={unir_0}></ProjectCard>
+            <ProjectCard title="Unity: Simon" imageSrc={simon_0}></ProjectCard>
             <ProjectCard title="A las ñapis" imageSrc={commingSoon}></ProjectCard>
             <ProjectCard title="Shot in the Dark" imageSrc={commingSoon}></ProjectCard>
             <ProjectCard title="B9" imageSrc={commingSoon}></ProjectCard>
