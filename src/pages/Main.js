@@ -2,7 +2,7 @@ import "../App.css";
 import "./Main.css";
 
 import React, { useState } from "react";
-import ProjectDescriptionModal from "../components/ProjectDescriptionModal";
+import DescriptionModal from "../components/DescriptionModal/DescriptionModal.js";
 
 import programmer from "../assets/icons/programmer.png";
 import frontend_icon from "../assets/icons/ux.png";
@@ -34,6 +34,9 @@ import aprendoLaHora_0 from "../assets/myprojects/Aprendo la hora/Aprendo La Hor
 import poc_avion_0 from "../assets/myprojects/PoC Avion/avion-2.jpg";
 import poc_portals_0 from "../assets/myprojects/PoC Portales/godot-portaloid-scene-6.jpg";
 import poc_terrain_0 from "../assets/myprojects/Terrenos Godot/nivel_pvp.png";
+import water_game_0 from "../assets/myprojects/Aysa/aysa_2.jpg";
+import b9_0 from "../assets/myprojects/B9/b9-1.jpg";
+import drmarioclone_0 from "../assets/myprojects/DrMarioClone/drmario-6.jpg";
 
 import simon_0 from "../assets/myprojects/Minijuegos/simon-0.jpg";
 import trivia_0 from "../assets/myprojects/Minijuegos/trivia-0.jpg";
@@ -42,9 +45,9 @@ import unir_0 from "../assets/myprojects/Minijuegos/unir-1.jpg";
 import memo_0 from "../assets/myprojects/Minijuegos/memo-0.jpg";
 
 //import curvedLines from "../assets/curved_lines_modified.png";
-import WorkCell from "../components/WorkCell";
-import NavButton from "../components/NavButton";
-import ProjectCard from "../components/ProjectCard";
+import WorkCell from "../components/WorkCell/WorkCell";
+import NavButton from "../components/NavButton/NavButton";
+import ProjectCard from "../components/ProjectCard/ProjectCard";
 import Company from "../components/Company";
 
 import { useTranslation } from 'react-i18next';
@@ -167,10 +170,11 @@ const Main = () => {
             <ProjectCard title="Unity: Puzzle" imageSrc={puzzle_0}></ProjectCard>
             <ProjectCard title="Unity: Complete the concept" imageSrc={unir_0}></ProjectCard>
             <ProjectCard title="Unity: Simon" imageSrc={simon_0}></ProjectCard>
+            <ProjectCard title="Water game" imageSrc={water_game_0}></ProjectCard>
+            <ProjectCard title="B9" imageSrc={b9_0}></ProjectCard>
+            <ProjectCard title="Dr. Mario Clone" imageSrc={drmarioclone_0}></ProjectCard>
             <ProjectCard title="A las ñapis" imageSrc={commingSoon}></ProjectCard>
             <ProjectCard title="Shot in the Dark" imageSrc={commingSoon}></ProjectCard>
-            <ProjectCard title="B9" imageSrc={commingSoon}></ProjectCard>
-            <ProjectCard title="Dr. Mario Clone" imageSrc={commingSoon}></ProjectCard>
             <ProjectCard title="Ruleta" imageSrc={commingSoon}></ProjectCard>
             <ProjectCard title="Word finder" imageSrc={commingSoon}></ProjectCard>
             <ProjectCard title="Siv" imageSrc={commingSoon}></ProjectCard>

@@ -22,9 +22,9 @@ import prosegur_logo from "../assets/companies-logos/prosegur-logo-2.png";
 import innobaires_logo from "../assets/companies-logos/innobaires_logo.png";
 import fdvsolutions_logo from "../assets/companies-logos/fdv_solutions.png";
 
-import WorkCell from "../components/WorkCell";
-import NavButton from "../components/NavButton";
-import ProjectCard from "../components/ProjectCard";
+import WorkCell from "../components/WorkCell/WorkCell.jsx";
+import NavButton from "../components/NavButton/NavButton.jsx";
+import ProjectCard from "../components/ProjectCard/ProjectCard.js";
 import Company from "../components/Company";
 
 import { useTranslation } from 'react-i18next';
