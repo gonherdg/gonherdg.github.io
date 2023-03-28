@@ -26,7 +26,7 @@
   "videogames-t1": "Game Engines and tools",
   "videogames-1": "Unity \nGodot \nPhaser \nBlender + GIMP + Audacity" ,
   "videogames-t2": "Languages and game stuff",
-  "videogames-2": "C# - GDScript - JS \n 2D & 3D games & animations\n Music & FX\n Shaders\n Networking: Mirror & Sockets\n API calls\n Lifecycle\n Singleton - State - Observer\n Factory - Object Pool\n Android & iOS",
+  "videogames-2": "C# - GDScript - JS \n 2D & 3D animations\n Music & FX\n Shaders\n Networking: Mirror & Sockets\n API calls\n Lifecycle\n Singleton - State - Observer\n Factory - Object Pool\n Android & iOS",
   "mywork": "My recent work",
   "mywork-sub": "These are some projects I worked on",
   "source-code": "</> Source code",
