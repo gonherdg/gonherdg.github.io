@@ -90,14 +90,14 @@ const Main = () => {
               <button className='LangButton' onClick={changeLanguage} value='es'>Español</button>
             </div>
             <NavButton className="RoundedButton" label={t('portfolio')} linkTo="/#portfolio"></NavButton>
-            <NavButton className="RoundedButton" label={t('blog')} linkTo="/blog"></NavButton>
+    {false && <NavButton className="RoundedButton" label={t('blog')} linkTo="/blog"></NavButton>}
             <NavButton className="RoundedButton" label={t('contact')} linkTo="/#contact"></NavButton>
           </div>
         </div>
 
         <div className="Presentation">
           <h1>{t('title')}</h1>
-          <h2>{t('subtitle')}</h2>
+          <h3 className="Subtitle2">{t('subtitle')}</h3>
           <div className="PhotoBackground">
             <div className="PhotoBackgroundFace">
               <img src={programmer} className="Photo" alt="logo" />
