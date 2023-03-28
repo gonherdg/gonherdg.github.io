@@ -86,11 +86,12 @@ const Main = () => {
           <div className="Logo">Gonzalo Del Gaudio</div>
           <div className="ButtonBar">
             <div className='Lang'>
-              <button className='LangButton' onClick={changeLanguage} value='en'>English</button>
+              <button className='LangButton' onClick={changeLanguage} value='en'>English</button>-
               <button className='LangButton' onClick={changeLanguage} value='es'>Español</button>
             </div>
             <NavButton className="RoundedButton" label={t('portfolio')} linkTo="/#portfolio"></NavButton>
     {false && <NavButton className="RoundedButton" label={t('blog')} linkTo="/blog"></NavButton>}
+    {false && <NavButton className="RoundedButton" label={t('resume')} linkTo="/resume"></NavButton>}
             <NavButton className="RoundedButton" label={t('contact')} linkTo="/#contact"></NavButton>
           </div>
         </div>
@@ -152,15 +153,11 @@ const Main = () => {
 
 
         <div id="portfolio" className="MyWork">
-          <div className="MyWorkTitle">
-          <h3>
-            {t('mywork')}
-          </h3>
-          <h2>{t('mywork-sub')}</h2>
-          </div>
+          <h2 className="MyWorkTitle">{t('mywork')}</h2>
+          <h3 className="MyWorkSubtitle">{t('mywork-sub')}</h3>
           <div className="ProjectGrid">
-            <ProjectCard title="Social Hub" imageSrc={socialHub_0} sourceLink="https://github.com/gonherdg/react-social-hub" description="(Project description)"></ProjectCard>
-            <ProjectCard title="Investor Simulator" imageSrc={investorSim} sourceLink="https://github.com/gonherdg/invest-sim-react-native" description="(Project description)"></ProjectCard>
+            <ProjectCard title="Social Hub" imageSrc={socialHub_0} sourceLink="https://github.com/gonherdg/react-social-hub" description="(Coming soon)"></ProjectCard>
+            <ProjectCard title="Investor Simulator" imageSrc={investorSim} sourceLink="https://github.com/gonherdg/invest-sim-react-native" description="(Coming soon)"></ProjectCard>
             <ProjectCard title="Unity: Aprendo la hora" imageSrc={aprendoLaHora_0} description=""></ProjectCard>
             <ProjectCard title={"Godot 4 - PoC:\nProcedural terrain"} imageSrc={poc_terrain_0} description=""></ProjectCard>
             <ProjectCard title={"Godot 4 - PoC:\nSpaceship movements"} imageSrc={poc_avion_0} description=""></ProjectCard>
