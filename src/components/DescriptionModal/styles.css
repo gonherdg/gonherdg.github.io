@@ -63,7 +63,7 @@ h2 {
 }
 
 .Link:hover {
-  background-color: #10E060;
-  border-color: #10E060;
+  background-color: var(--highlight-font);
+  border-color: var(--highlight-font);
   cursor: pointer;
 }

@@ -18,9 +18,9 @@
   }
 
   .RoundedButton:hover {
-    border: 2px solid rgb(0, 190, 0);
+    border: 2px solid var(--highlight-font);
     color: var(--secondary-font);
-    background-color: var(--button-hover-green);
+    background-color: var(--highlight-font);
     cursor:pointer;
   }
 

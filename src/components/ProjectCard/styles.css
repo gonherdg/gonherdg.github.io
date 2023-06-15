@@ -45,7 +45,7 @@
 
 
 .ProjectCard__code-link:hover {
-  background-color: #10C050F9;
+  background-color: var(--highlight-font);
 }
 
 .Disabled:hover {
