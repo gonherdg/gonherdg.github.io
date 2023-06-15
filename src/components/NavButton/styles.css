@@ -10,16 +10,17 @@
     padding-bottom: 9px;
     margin-left: 9px;
     border-radius: 38px;
-    border: 2px solid rgb(0,160,0);
-    background-color: #FFFFFF;
-    color: rgb(0,160,0);
+    border: 2px solid var(--primary-font);
+    background-color: white;
+    color: var(--primary-font);
     font-size: 18px;
     text-decoration: none;
   }
 
   .RoundedButton:hover {
     border: 2px solid rgb(0, 190, 0);
-    color: rgb(0, 190, 0);
+    color: var(--secondary-font);
+    background-color: var(--button-hover-green);
     cursor:pointer;
   }
 

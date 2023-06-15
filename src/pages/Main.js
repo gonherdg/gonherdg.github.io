@@ -4,6 +4,8 @@ import "./Main.css";
 import React, { useState } from "react";
 import DescriptionModal from "../components/DescriptionModal/DescriptionModal.js";
 
+// Misc icons
+import gonherdg_icon from "../assets/icons/gonherdg_icon.png";
 import programmer from "../assets/icons/programmer.png";
 import frontend_icon from "../assets/icons/ux.png";
 import frontend_icon_b from "../assets/icons/responsive-design.png";
@@ -11,11 +13,13 @@ import backend_icon from "../assets/icons/backend.png";
 import backend_icon_b from "../assets/icons/web-settings.png";
 import game_icon from "../assets/icons/3d-game.png";
 
+// Social Networks' logos
 import github from "../assets/social-logos/github.png";
 import linkedin from "../assets/social-logos/linkedin_c.png";
 import upwork from "../assets/social-logos/upwork_b.png";
 import fiverr from "../assets/social-logos/fiverr.png";
 
+// Company logos
 import accenture_logo from "../assets/companies-logos/Accenture-logo.png";
 import softrc_logo from "../assets/companies-logos/soft_rc_logo_n.png";
 import cinco_seis_logo from "../assets/companies-logos/5seis_verde.jpg";
@@ -83,7 +87,10 @@ const Main = () => {
 
         <div className="TopBar">
           {/*<img className="Logo" src="" alt="Gonsoft"/>*/}
-          <div className="Logo">Gonzalo Del Gaudio</div>
+    <div className="Logo">
+      <img src={gonherdg_icon} className="SNLink" alt="my_logo"/>
+      Gonzalo Del Gaudio
+    </div>
           <div className="ButtonBar">
             <div className='Lang'>
               <button className='LangButton' onClick={changeLanguage} value='en'>English</button>-

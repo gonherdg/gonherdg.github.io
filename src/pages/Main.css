@@ -19,7 +19,7 @@
   align-items: center;
   text-align: center;
   justify-content: space-between;
-  color: rgb(30, 30, 30);
+  color: var(--secondary-font);
   font-size: larger;
 }
 
@@ -31,7 +31,7 @@
   margin-left: 10px;
   border-radius: 38px;
   border: 2px solid var(--primary);
-  color: var(--primary);
+  color: var(--primary-font);
 }
 
 .ButtonBar {
@@ -57,7 +57,7 @@
 }
 
 .LangButton:hover {
-  color: #777;
+  color: var(--button-hover-green);
 }
 
 
@@ -158,7 +158,7 @@ h3 {
 
 .MyName {
   padding-top: 85px;
-  color: white;
+  color: var(--primary-font);
   letter-spacing: 1px;
 }
 
@@ -167,7 +167,7 @@ h3 {
   font-size: 18px;
   margin-left: 20%;
   margin-right: 20%;
-  color: white;
+  color: var(--primary-font);
   text-align: center;
 }
 
@@ -210,14 +210,14 @@ h3 {
 }
 
 .VFTitle {
-  color: #111;
+  color: var(--primary-font);
   font-size: 24px;
   font-weight: 700;
   margin-bottom: 35px;
 }
 
 .VFBody {
-  color: #111;
+  color: var(--primary-font);
   font-size: 16px;
   font-weight: 400;
   margin-top: 10px;
@@ -230,7 +230,7 @@ h3 {
 }
 
 .Subtitle {
-  color: var(--primary);
+  color: var(--grey-font);
   font-size: 18px;
   font-weight: 600;
   margin-top: 35px;
@@ -244,7 +244,7 @@ h3 {
   margin-top: 150px;
   padding-top: 120px;
   padding-bottom: 120px;
-  background-color: #F5F5F5;
+  background-color: var(--primary);
 }
 
 .MyWorkTitle {
@@ -293,7 +293,7 @@ h3 {
 }
 
 .LogoWhite {
-  color: white;
+  color: var(--primary-font);
   flex: 1;
   border: 1px solid black;
 }

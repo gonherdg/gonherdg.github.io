@@ -13,13 +13,20 @@
 
 
 :root {
-  --primary: #10A050F9;/* #7510F7F9; /* #1e90ff; */
+  --primary: #C5C5D5; /*#10A050F9;/* #7510F7F9; /* #1e90ff; */
   --secondary: #FFF; /* #FDC; */
   --terceary: #282c34;
-  --colorA: #A01050F9;
+  --colorA: #858585; /*#A01050F9; */
   --colorB: #F5F5F5;
   --colorC: #222;
   --commonShadow: 1px 1px 6px #ccc2, -1px -1px 6px #ccc2, 1px -1px 6px #ccc2, -1px 1px 6px #ccc2;
+  --disabled: #BBB;
+
+  --primary-font: #111;
+  --secondary-font: #222;
+  --grey-font: #99A;
+
+  --button-hover-green: #10C050F9;
 }
 
 
