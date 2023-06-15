@@ -54,177 +54,304 @@ import NavButton from "../components/NavButton/NavButton";
 import ProjectCard from "../components/ProjectCard/ProjectCard";
 import Company from "../components/Company";
 
-import { useTranslation } from 'react-i18next';
-import { HashLink as Link } from 'react-router-hash-link';
+import { useTranslation } from "react-i18next";
+import { HashLink as Link } from "react-router-hash-link";
 
 const Main = () => {
-  const { t } = useTranslation();
-  const { i18n } = useTranslation();
+    const { t } = useTranslation();
+    const { i18n } = useTranslation();
 
-  const [isModalOpen, setIsModalOpen] = useState(false);
+    const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const linkedinProfileLink = "https://www.linkedin.com/in/gonzalodelgaudio/";
-  const upworkProfileLink = "https://www.upwork.com/freelancers/~015bb5c8a4a1b92f4a";
-  const githubProfileLink= "https://github.com/gonherdg";
-  const fiverrProfileLink = "https://www.fiverr.com/gonzahdg";
+    const linkedinProfileLink = "https://www.linkedin.com/in/gonzalodelgaudio/";
+    const upworkProfileLink =
+        "https://www.upwork.com/freelancers/~015bb5c8a4a1b92f4a";
+    const githubProfileLink = "https://github.com/gonherdg";
+    const fiverrProfileLink = "https://www.fiverr.com/gonzahdg";
 
-  function changeLanguage(e) {
-    i18n.changeLanguage(e.target.value);
-  }
+    function changeLanguage(e) {
+        i18n.changeLanguage(e.target.value);
+        console.log(i18n.language);
+    }
 
-  const openModal =  () => {
-    console.log("Open modal...")
-    setIsModalOpen(true);
-  }
+    const openModal = () => {
+        console.log("Open modal...");
+        setIsModalOpen(true);
+    };
 
-  const closeModal = () =>  {
-    setIsModalOpen(false);
-  }
+    const closeModal = () => {
+        setIsModalOpen(false);
+    };
 
-  return (
-    <div className="App">
-      <div className="Main">
+    return (
+        <div className="App">
+            <div className="Main">
+                <div className="TopBar">
+                    {/*<img className="Logo" src="" alt="Gonsoft"/>*/}
+                    <div className="Logo">
+                        <img
+                            src={gonherdg_icon}
+                            className="SNLink"
+                            alt="my_logo"
+                        />
+                        Gonzalo Del Gaudio
+                    </div>
+                    <div className="ButtonBar">
+                        <div className="Lang">
+                            <button
+                                className={`LangButton ${
+                                    i18n.language === "en"
+                                        ? "ColorHighlightFont"
+                                        : ""
+                                }`}
+                                onClick={changeLanguage}
+                                value="en">
+                                EN
+                            </button>
+                            -
+                            <button
+                                className={`LangButton ${
+                                    i18n.language === "es"
+                                        ? "ColorHighlightFont"
+                                        : ""
+                                }`}
+                                onClick={changeLanguage}
+                                value="es">
+                                ES
+                            </button>
+                        </div>
+                        <NavButton
+                            className="RoundedButton"
+                            label={t("portfolio")}
+                            linkTo="/#portfolio"></NavButton>
+                        {false && (
+                            <NavButton
+                                className="RoundedButton"
+                                label={t("blog")}
+                                linkTo="/blog"></NavButton>
+                        )}
+                        {false && (
+                            <NavButton
+                                className="RoundedButton"
+                                label={t("resume")}
+                                linkTo="/resume"></NavButton>
+                        )}
+                        <NavButton
+                            className="RoundedButton"
+                            label={t("contact")}
+                            linkTo="/#contact"></NavButton>
+                    </div>
+                </div>
 
-        <div className="TopBar">
-          {/*<img className="Logo" src="" alt="Gonsoft"/>*/}
-    <div className="Logo">
-      <img src={gonherdg_icon} className="SNLink" alt="my_logo"/>
-      Gonzalo Del Gaudio
-    </div>
-          <div className="ButtonBar">
-            <div className='Lang'>
-              <button className='LangButton' onClick={changeLanguage} value='en'>English</button>-
-              <button className='LangButton' onClick={changeLanguage} value='es'>Español</button>
+                <div className="Presentation">
+                    <h1>{t("title")}</h1>
+                    <h3 className="Subtitle2">{t("subtitle")}</h3>
+                    <div className="PhotoBackground">
+                        <div className="PhotoBackgroundFace">
+                            <img
+                                src={programmer}
+                                className="Photo"
+                                alt="logo"
+                            />
+                            <div className="PhotoBackgroundLaptop"></div>
+                        </div>
+                    </div>
+
+                    <div className="PresentationAbstractImage"></div>
+                </div>
+
+                <div className="FirstSomeWords">
+                    <h3 className="MyName">{t("hi")}</h3>
+                    <p className="SomeWords">{t("description")}</p>
+                </div>
+
+                <div className="VerticalFrames">
+                    <div className="VFrame">
+                        <img
+                            src={frontend_icon_b}
+                            className="VFImage"
+                            alt="logo"
+                        />
+                        <div className="VFTitle">{t("frontend")}</div>
+                        <div className="VFBody">{t("frontend-0")}</div>
+                        <div className="Subtitle">{t("frontend-t1")}</div>
+                        <div className="VFBody">{t("frontend-1")}</div>
+                        <div className="Subtitle">{t("frontend-t2")}</div>
+                        <div className="VFBody">{t("frontend-2")}</div>
+                    </div>
+
+                    <div className="VerticalSeparator"></div>
+
+                    <div className="VFrame">
+                        <img
+                            src={backend_icon_b}
+                            className="VFImage"
+                            alt="logo"
+                        />
+                        <div className="VFTitle">{t("backend")}</div>
+                        <div className="VFBody">{t("backend-0")}</div>
+                        <div className="Subtitle">{t("backend-t1")}</div>
+                        <div className="VFBody">{t("backend-1")}</div>
+                        <div className="Subtitle">{t("backend-t2")}</div>
+                        <div className="VFBody">{t("backend-2")}</div>
+                    </div>
+
+                    <div className="VerticalSeparator"></div>
+
+                    <div className="VFrame">
+                        <img src={game_icon} className="VFImage" alt="logo" />
+                        <div className="VFTitle">{t("videogames")}</div>
+                        <div className="VFBody">{t("videogames-0")}</div>
+                        <div className="Subtitle">{t("videogames-t1")}</div>
+                        <div className="VFBody">{t("videogames-1")}</div>
+                        <div className="Subtitle">{t("videogames-t2")}</div>
+                        <div className="VFBody">{t("videogames-2")}</div>
+                    </div>
+                </div>
+
+                <div id="portfolio" className="MyWork">
+                    <h2 className="MyWorkTitle">{t("mywork")}</h2>
+                    <h3 className="MyWorkSubtitle">{t("mywork-sub")}</h3>
+                    <div className="ProjectGrid">
+                        <ProjectCard
+                            title="Social Hub"
+                            imageSrc={socialHub_0}
+                            sourceLink="https://github.com/gonherdg/react-social-hub"
+                            description="(Coming soon)"></ProjectCard>
+                        <ProjectCard
+                            title="Investor Simulator"
+                            imageSrc={investorSim}
+                            sourceLink="https://github.com/gonherdg/invest-sim-react-native"
+                            description="(Coming soon)"></ProjectCard>
+                        <ProjectCard
+                            title="Unity: Aprendo la hora"
+                            imageSrc={aprendoLaHora_0}
+                            description=""></ProjectCard>
+                        <ProjectCard
+                            title={"Godot 4 - PoC:\nProcedural terrain"}
+                            imageSrc={poc_terrain_0}
+                            description=""></ProjectCard>
+                        <ProjectCard
+                            title={"Godot 4 - PoC:\nSpaceship movements"}
+                            imageSrc={poc_avion_0}
+                            description=""></ProjectCard>
+                        <ProjectCard
+                            title={"Godot 4 - PoC:\nPortals"}
+                            imageSrc={poc_portals_0}></ProjectCard>
+                        <ProjectCard
+                            title="Unity: Memotest"
+                            imageSrc={memo_0}></ProjectCard>
+                        <ProjectCard
+                            title="Unity: Trivia"
+                            imageSrc={trivia_0}></ProjectCard>
+                        <ProjectCard
+                            title="Unity: Puzzle"
+                            imageSrc={puzzle_0}></ProjectCard>
+                        <ProjectCard
+                            title="Unity: Complete the concept"
+                            imageSrc={unir_0}></ProjectCard>
+                        <ProjectCard
+                            title="Unity: Simon"
+                            imageSrc={simon_0}></ProjectCard>
+                        <ProjectCard
+                            title="Water game"
+                            imageSrc={water_game_0}></ProjectCard>
+                        <ProjectCard title="B9" imageSrc={b9_0}></ProjectCard>
+                        <ProjectCard
+                            title="Dr. Mario Clone"
+                            imageSrc={drmarioclone_0}></ProjectCard>
+                        <ProjectCard
+                            title="A las ñapis"
+                            imageSrc={commingSoon}></ProjectCard>
+                        <ProjectCard
+                            title="Shot in the Dark"
+                            imageSrc={commingSoon}></ProjectCard>
+                        <ProjectCard
+                            title="Ruleta"
+                            imageSrc={commingSoon}></ProjectCard>
+                        <ProjectCard
+                            title="Word finder"
+                            imageSrc={commingSoon}></ProjectCard>
+                        <ProjectCard
+                            title="Siv"
+                            imageSrc={commingSoon}></ProjectCard>
+                        <ProjectCard
+                            title="Tiburon3D"
+                            imageSrc={commingSoon}></ProjectCard>
+                        <ProjectCard
+                            title="Galuxian WIP"
+                            imageSrc={commingSoon}></ProjectCard>
+                        <ProjectCard
+                            title="Tiny Art"
+                            imageSrc={commingSoon}></ProjectCard>
+                        <ProjectCard
+                            title="Truco Online WIP"
+                            imageSrc={commingSoon}></ProjectCard>
+                        <ProjectCard
+                            title="Mio Kill"
+                            imageSrc={commingSoon}></ProjectCard>
+                        <ProjectCard
+                            title="OpenVoxelEditor"
+                            imageSrc={commingSoon}></ProjectCard>
+                    </div>
+                </div>
+
+                <div className="CompaniesIWorkedFor">
+                    <h3 className="MyWorkTitle">{t("companies")}</h3>
+                    <div className="CompaniesContainer">
+                        <Company name="" imageSrc={accenture_logo}></Company>
+                        <Company name="" imageSrc={softrc_logo}></Company>
+                        <Company name="" imageSrc={prosegur_logo}></Company>
+                        <Company name="" imageSrc={innobaires_logo}></Company>
+                        <Company name="" imageSrc={fdvsolutions_logo}></Company>
+                        <Company name="" imageSrc={cinco_seis_logo}></Company>
+                        <Company
+                            name="Inmental Interactive S.R.L."
+                            imageSrc={inmental_logo}></Company>
+                        <Company
+                            name="Aincrad Tech"
+                            imageSrc={aincrad_tech_logo}></Company>
+                    </div>
+                </div>
+
+                <div id="contact" className="FinalWords">
+                    {!(<h3 className="MyName">{t("get-in-touch")}</h3>) && (
+                        <img className="LogoWhite" src="" alt="LOGO"></img>
+                    )}
+                    <div className="SocialNetworkLinks">
+                        <a target="_blank" href={linkedinProfileLink}>
+                            <img
+                                className="UWLink"
+                                src={linkedin}
+                                alt="LinkedIn"
+                                title="My LinkedIn profile"></img>
+                        </a>
+                        <a target="_blank" href={githubProfileLink}>
+                            <img
+                                className="SNLink"
+                                src={github}
+                                alt="Github"
+                                title="My Github profile"></img>
+                        </a>
+                        <a target="_blank" href={upworkProfileLink}>
+                            <img
+                                className="UWLink"
+                                src={upwork}
+                                alt="UpWork"
+                                title="My UpWork profile"></img>
+                        </a>
+                        <a target="_blank" href={fiverrProfileLink}>
+                            <img
+                                className="UWLink"
+                                src={fiverr}
+                                alt="Fiverr"
+                                title="My Fiverr profile"></img>
+                        </a>
+                    </div>
+                </div>
             </div>
-            <NavButton className="RoundedButton" label={t('portfolio')} linkTo="/#portfolio"></NavButton>
-    {false && <NavButton className="RoundedButton" label={t('blog')} linkTo="/blog"></NavButton>}
-    {false && <NavButton className="RoundedButton" label={t('resume')} linkTo="/resume"></NavButton>}
-            <NavButton className="RoundedButton" label={t('contact')} linkTo="/#contact"></NavButton>
-          </div>
         </div>
-
-        <div className="Presentation">
-          <h1>{t('title')}</h1>
-          <h3 className="Subtitle2">{t('subtitle')}</h3>
-          <div className="PhotoBackground">
-            <div className="PhotoBackgroundFace">
-              <img src={programmer} className="Photo" alt="logo" />
-              <div className="PhotoBackgroundLaptop"></div>
-            </div>
-          </div>
-
-          <div className="PresentationAbstractImage">
-          </div>
-        </div>
-
-        <div className="FirstSomeWords">
-          <h3 className="MyName">{t('hi')}</h3>
-          <p className="SomeWords">{t('description')}</p>
-        </div>
-
-        <div className="VerticalFrames">
-          <div className="VFrame">
-            <img src={frontend_icon_b} className="VFImage" alt="logo" />
-            <div className="VFTitle">{t('frontend')}</div>
-            <div className="VFBody">{t('frontend-0')}</div>
-            <div className="Subtitle">{t('frontend-t1')}</div>
-            <div className="VFBody">{t('frontend-1')}</div>
-            <div className="Subtitle">{t('frontend-t2')}</div>
-            <div className="VFBody">{t('frontend-2')}</div>
-          </div>
-
-          <div className="VerticalSeparator"></div>
-
-          <div className="VFrame">
-            <img src={backend_icon_b} className="VFImage" alt="logo" />
-            <div className="VFTitle">{t('backend')}</div>
-            <div className="VFBody">{t('backend-0')}</div>
-            <div className="Subtitle">{t('backend-t1')}</div>
-            <div className="VFBody">{t('backend-1')}</div>
-            <div className="Subtitle">{t('backend-t2')}</div>
-            <div className="VFBody">{t('backend-2')}</div>
-          </div>
-
-          <div className="VerticalSeparator"></div>
-
-          <div className="VFrame">
-            <img src={game_icon} className="VFImage" alt="logo" />
-            <div className="VFTitle">{t('videogames')}</div>
-            <div className="VFBody">{t('videogames-0')}</div>
-            <div className="Subtitle">{t('videogames-t1')}</div>
-            <div className="VFBody">{t('videogames-1')}</div>
-            <div className="Subtitle">{t('videogames-t2')}</div>
-            <div className="VFBody">{t('videogames-2')}</div>
-          </div>
-        </div>
-
-
-        <div id="portfolio" className="MyWork">
-          <h2 className="MyWorkTitle">{t('mywork')}</h2>
-          <h3 className="MyWorkSubtitle">{t('mywork-sub')}</h3>
-          <div className="ProjectGrid">
-            <ProjectCard title="Social Hub" imageSrc={socialHub_0} sourceLink="https://github.com/gonherdg/react-social-hub" description="(Coming soon)"></ProjectCard>
-            <ProjectCard title="Investor Simulator" imageSrc={investorSim} sourceLink="https://github.com/gonherdg/invest-sim-react-native" description="(Coming soon)"></ProjectCard>
-            <ProjectCard title="Unity: Aprendo la hora" imageSrc={aprendoLaHora_0} description=""></ProjectCard>
-            <ProjectCard title={"Godot 4 - PoC:\nProcedural terrain"} imageSrc={poc_terrain_0} description=""></ProjectCard>
-            <ProjectCard title={"Godot 4 - PoC:\nSpaceship movements"} imageSrc={poc_avion_0} description=""></ProjectCard>
-            <ProjectCard title={"Godot 4 - PoC:\nPortals"} imageSrc={poc_portals_0}></ProjectCard>
-            <ProjectCard title="Unity: Memotest" imageSrc={memo_0}></ProjectCard>
-            <ProjectCard title="Unity: Trivia" imageSrc={trivia_0}></ProjectCard>
-            <ProjectCard title="Unity: Puzzle" imageSrc={puzzle_0}></ProjectCard>
-            <ProjectCard title="Unity: Complete the concept" imageSrc={unir_0}></ProjectCard>
-            <ProjectCard title="Unity: Simon" imageSrc={simon_0}></ProjectCard>
-            <ProjectCard title="Water game" imageSrc={water_game_0}></ProjectCard>
-            <ProjectCard title="B9" imageSrc={b9_0}></ProjectCard>
-            <ProjectCard title="Dr. Mario Clone" imageSrc={drmarioclone_0}></ProjectCard>
-            <ProjectCard title="A las ñapis" imageSrc={commingSoon}></ProjectCard>
-            <ProjectCard title="Shot in the Dark" imageSrc={commingSoon}></ProjectCard>
-            <ProjectCard title="Ruleta" imageSrc={commingSoon}></ProjectCard>
-            <ProjectCard title="Word finder" imageSrc={commingSoon}></ProjectCard>
-            <ProjectCard title="Siv" imageSrc={commingSoon}></ProjectCard>
-            <ProjectCard title="Tiburon3D" imageSrc={commingSoon}></ProjectCard>
-            <ProjectCard title="Galuxian WIP" imageSrc={commingSoon}></ProjectCard>
-            <ProjectCard title="Tiny Art" imageSrc={commingSoon}></ProjectCard>
-            <ProjectCard title="Truco Online WIP" imageSrc={commingSoon}></ProjectCard>
-            <ProjectCard title="Mio Kill" imageSrc={commingSoon}></ProjectCard>
-            <ProjectCard title="OpenVoxelEditor" imageSrc={commingSoon}></ProjectCard>
-          </div>
-        </div>
-
-
-        <div className="CompaniesIWorkedFor">
-          <h3 className="MyWorkTitle">
-            {t('companies')}
-          </h3>
-          <div className="CompaniesContainer">
-            <Company name="" imageSrc={accenture_logo}></Company>
-            <Company name="" imageSrc={softrc_logo}></Company>
-            <Company name="" imageSrc={prosegur_logo}></Company>
-            <Company name="" imageSrc={innobaires_logo}></Company>
-            <Company name="" imageSrc={fdvsolutions_logo}></Company>
-            <Company name="" imageSrc={cinco_seis_logo}></Company>
-            <Company name="Inmental Interactive S.R.L." imageSrc={inmental_logo}></Company>
-            <Company name="Aincrad Tech" imageSrc={aincrad_tech_logo}></Company>
-          </div>
-        </div>
-
-
-        <div id="contact" className="FinalWords">
-          {!
-            <h3 className="MyName">{t('get-in-touch')}</h3> &&
-            <img className="LogoWhite" src="" alt="LOGO"></img>
-          }
-          <div className="SocialNetworkLinks">
-            <a target="_blank" href={linkedinProfileLink}><img className="UWLink" src={linkedin} alt="LinkedIn" title="My LinkedIn profile"></img></a>
-            <a target="_blank" href={githubProfileLink}><img className="SNLink" src={github} alt="Github" title="My Github profile"></img></a>
-            <a target="_blank" href={upworkProfileLink}><img className="UWLink" src={upwork} alt="UpWork" title="My UpWork profile"></img></a>
-            <a target="_blank" href={fiverrProfileLink}><img className="UWLink" src={fiverr} alt="Fiverr" title="My Fiverr profile"></img></a>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  );
-}
+    );
+};
 
 export default Main;

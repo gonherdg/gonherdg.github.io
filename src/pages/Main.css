@@ -60,6 +60,9 @@
   color: var(--highlight-font);
 }
 
+.ColorHighlightFont {
+  color: var(--highlight-font)
+}
 
 /*+++++++++++++++++*/
 .Presentation {
