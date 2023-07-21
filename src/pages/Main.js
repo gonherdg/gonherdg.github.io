@@ -51,7 +51,7 @@ import memo_0 from "../assets/myprojects/Minijuegos/memo-0.jpg";
 import WorkCell from "../components/WorkCell/WorkCell";
 import NavButton from "../components/NavButton/NavButton";
 import ProjectCard from "../components/ProjectCard/ProjectCard";
-import Company from "../components/Company";
+import Company from "../components/Company/Company";
 
 import { useTranslation } from "react-i18next";
 import { HashLink as Link } from "react-router-hash-link";
@@ -136,6 +136,8 @@ const Main = () => {
                             label={t("contact")}
                             linkTo="/#contact"></NavButton>
                     </div>
+
+                    <div className="Options"></div>
                 </div>
 
                 <div className="Presentation">

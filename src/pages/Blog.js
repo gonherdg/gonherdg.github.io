@@ -25,7 +25,7 @@ import fdvsolutions_logo from "../assets/companies-logos/fdv_solutions.png";
 import WorkCell from "../components/WorkCell/WorkCell.jsx";
 import NavButton from "../components/NavButton/NavButton.jsx";
 import ProjectCard from "../components/ProjectCard/ProjectCard.js";
-import Company from "../components/Company";
+import Company from "../components/Company/Company";
 
 import { useTranslation } from "react-i18next";
 import { HashLink as Link } from "react-router-hash-link";

@@ -272,11 +272,43 @@ h3 {
   column-gap: 60px;
   row-gap: 90px;
   grid-template-columns: auto auto auto auto;
-
 }
 
 .CompanyLogo {
   border: 1px solid black;
+}
+
+@media only screen and (max-width: 1100px) {
+  .CompaniesContainer {
+    grid-template-columns: auto auto auto;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  .CompaniesContainer {
+    grid-template-columns: auto auto;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .CompaniesContainer {
+    grid-template-columns: auto;
+  }
+  .ButtonBar {
+    display: none;
+  }
+  .VerticalFrames {
+    flex-direction: column;
+    margin-top: -80px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .VerticalFrames {
+    flex-direction: column;
+    margin-top: 0px;
+    border: 1px solid #fff;
+  }
 }
 
 
@@ -336,3 +368,15 @@ h3 {
 }
 
 
+
+@media only screen and (max-width: 480px) {
+  .SocialNetworkLinks {
+    flex-direction: row;
+  }
+  .SNLink {
+    margin: 5px;
+  }
+  .UWLink {
+    margin: 5px;
+  }
+}
