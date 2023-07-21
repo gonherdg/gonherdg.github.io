@@ -5,7 +5,6 @@ import React, { useState } from "react";
 import DescriptionModal from "../components/DescriptionModal/DescriptionModal.js";
 
 // Misc icons
-import gonherdg_icon from "../assets/icons/gonherdg_icon.png";
 import programmer from "../assets/icons/programmer.png";
 import frontend_icon from "../assets/icons/ux.png";
 import frontend_icon_b from "../assets/icons/responsive-design.png";
@@ -89,13 +88,7 @@ const Main = () => {
                 <div className="TopBar">
                     {/*<img className="Logo" src="" alt="Gonsoft"/>*/}
                     <div className="Logo">
-                        {false && (
-                            <img
-                                src={gonherdg_icon}
-                                className="SNLink"
-                                alt="my_logo"
-                            />
-                        )}
+                        {false && <img className="SNLink" alt="my_logo" />}
                         Gonzalo Del Gaudio
                     </div>
                     <div className="ButtonBar">
