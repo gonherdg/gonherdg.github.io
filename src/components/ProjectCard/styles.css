@@ -30,13 +30,14 @@
   font-weight: bold;
   color: #fff;
   text-align: center;
-  background-color: var(--primary);
+  background-color: var(--highlight-font);
   text-decoration: none;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
   border: none;
+  margin: 2px;
 }
 
 .Disabled {
@@ -45,7 +46,7 @@
 
 
 .ProjectCard__code-link:hover {
-  background-color: var(--highlight-font);
+  background-color: var(--highlight-font-light);
 }
 
 .Disabled:hover {
