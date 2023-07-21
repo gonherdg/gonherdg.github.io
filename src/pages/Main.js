@@ -89,11 +89,13 @@ const Main = () => {
                 <div className="TopBar">
                     {/*<img className="Logo" src="" alt="Gonsoft"/>*/}
                     <div className="Logo">
-                        <img
-                            src={gonherdg_icon}
-                            className="SNLink"
-                            alt="my_logo"
-                        />
+                        {false && (
+                            <img
+                                src={gonherdg_icon}
+                                className="SNLink"
+                                alt="my_logo"
+                            />
+                        )}
                         Gonzalo Del Gaudio
                     </div>
                     <div className="ButtonBar">
@@ -217,7 +219,9 @@ const Main = () => {
                             title="Social Hub"
                             imageSrc={socialHub_0}
                             sourceLink="https://github.com/gonherdg/react-social-hub"
-                            description="(Coming soon)"></ProjectCard>
+                            description="Social Hub is a reduced version of any social media app. The purpose of the project is to demonstrate the use of different technologies to create an app that includes a login/logout/signup system with JWT and Google OAuth service, "
+                            techTags="React;Javascript;Github Pages;AWS Lambda;Serverless architecture;NodeJS;ExpressJS"
+                            demoLink="https://socialhub.gonherdg.eu.org"></ProjectCard>
                         <ProjectCard
                             title="Investor Simulator"
                             imageSrc={investorSim}
