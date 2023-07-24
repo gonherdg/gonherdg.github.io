@@ -381,6 +381,9 @@ h3 {
   transform: scale(1.2);
 }
 
+.Options {
+  display: none;
+}
 
 
 @media only screen and (max-width: 480px) {
@@ -394,5 +397,8 @@ h3 {
   }
   .UWLink {
     margin: 5px;
+  }
+  .Options {
+    display: inline;
   }
 }
