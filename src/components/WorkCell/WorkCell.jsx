@@ -10,7 +10,7 @@ const WorkCell = ({imgSource = "https://d3ugyf2ht6aenh.cloudfront.net/stores/913
         
         </div>}
       {!hover && <div>
-        <img className="cellImage" src={imgSource}/>
+        <img className="cellImage" alt={""} src={imgSource}/>
       </div>}
     </div>
     

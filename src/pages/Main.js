@@ -318,28 +318,40 @@ const Main = () => {
                         <img className="LogoWhite" src="" alt="LOGO"></img>
                     )}
                     <div className="SocialNetworkLinks">
-                        <a target="_blank" href={linkedinProfileLink}>
+                        <a
+                            target="_blank"
+                            href={linkedinProfileLink}
+                            rel="noreferrer">
                             <img
                                 className="UWLink"
                                 src={linkedin}
                                 alt="LinkedIn"
                                 title="My LinkedIn profile"></img>
                         </a>
-                        <a target="_blank" href={githubProfileLink}>
+                        <a
+                            target="_blank"
+                            href={githubProfileLink}
+                            rel="noreferrer">
                             <img
                                 className="SNLink"
                                 src={github}
                                 alt="Github"
                                 title="My Github profile"></img>
                         </a>
-                        <a target="_blank" href={upworkProfileLink}>
+                        <a
+                            target="_blank"
+                            href={upworkProfileLink}
+                            rel="noreferrer">
                             <img
                                 className="UWLink"
                                 src={upwork}
                                 alt="UpWork"
                                 title="My UpWork profile"></img>
                         </a>
-                        <a target="_blank" href={fiverrProfileLink}>
+                        <a
+                            target="_blank"
+                            href={fiverrProfileLink}
+                            rel="noreferrer">
                             <img
                                 className="UWLink"
                                 src={fiverr}

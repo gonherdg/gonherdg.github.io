@@ -40,7 +40,7 @@ const ProjectDescriptionModal = ({
 
             <div className="MainContainer">
                 <div className="LeftSide">
-                    <img src={imageSrc} className="ImageBox"></img>
+                    <img src={imageSrc} alt={title} className="ImageBox"></img>
                 </div>
                 <div className="DescriptionContainer">
                     <h3>Description:</h3>
