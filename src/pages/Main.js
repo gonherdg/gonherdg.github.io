@@ -89,7 +89,8 @@ const Main = () => {
                     {/*<img className="Logo" src="" alt="Gonsoft"/>*/}
                     <div className="Logo">
                         {false && <img className="SNLink" alt="my_logo" />}
-                        Gonzalo Del Gaudio
+                        Gonzalo
+                        <div className="DivName"> Del Gaudio</div>
                     </div>
                     <div className="ButtonBar">
                         <div className="Lang">
