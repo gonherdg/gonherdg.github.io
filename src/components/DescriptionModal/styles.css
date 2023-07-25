@@ -64,20 +64,44 @@ h2 {
   margin: 30px 15px 0 0;
   text-decoration: none;
   max-width: fit-content;
+  cursor: pointer;
 }
 
 .Link:hover {
   background-color: var(--highlight-font);
   border-color: var(--highlight-font);
+}
+
+.DisabledLink {
+  border: 2px solid var(--disabled);
+  background-color: var(--disabled);
+  color: var(--grey);
+  border-radius: 15px;
+  padding: 4px 16px 4px 16px;
+  margin: 30px 15px 0 0;
+  text-decoration: none;
+  max-width: fit-content;
   cursor: pointer;
 }
 
 .TagContainer {
 }
 
-.tag {
-    height: 40px;
-    border-radius: 50%;;
-    padding: 10px;
-    margin: 8px;
+.Tag {
+  font-size: small;
+  display: inline-block;
+  padding: 5px 8px 5px 8px;
+  background-color: var(--grey);
+  color: var(--white);
+  text-align: center;
+  border-radius: 20px;
+  margin: 3px;
+}
+
+.EmptyFlex {
+  flex: 0.9;
+}
+
+.ButtonContainer {
+  flex: 0.1;
 }

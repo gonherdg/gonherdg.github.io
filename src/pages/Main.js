@@ -235,8 +235,8 @@ const Main = () => {
                                 <ProjectCard
                                     title="A las ñapis"
                                     imageSrc={commingSoon}
-                                    description=""
-                                    techTags=""></ProjectCard>
+                                    description="This is one of my first creations as a website. As I was already used to make videogames, why not try to make a new one to play on a browser?"
+                                    techTags="HTML;CSS;Web Sockets"></ProjectCard>
                                 <ProjectCard
                                     title="Word finder"
                                     imageSrc={commingSoon}

@@ -48,24 +48,27 @@ const ProjectDescriptionModal = ({
                     {techTags && (
                         <div className="TagContainer">
                             {techTags.split(";").map((item, index, arr) => (
-                                <span className="tag">{item}</span>
+                                <span className="Tag">{item}</span>
                             ))}
                         </div>
                     )}
-                    <a
-                        href={demoLink}
-                        target="_blank"
-                        className="Link"
-                        rel="noreferrer">
-                        Demo
-                    </a>
-                    <a
-                        href={sourceLink}
-                        target="_blank"
-                        rel="noreferrer"
-                        className="Link">
-                        Source
-                    </a>
+                    <div className="EmptyFlex"></div>
+                    <div className="ButtonContainer">
+                        <a
+                            href={demoLink}
+                            target="_blank"
+                            className={demoLink ? "Link" : "DisabledLink"}
+                            rel="noreferrer">
+                            Open
+                        </a>
+                        <a
+                            href={sourceLink}
+                            target="_blank"
+                            rel="noreferrer"
+                            className={sourceLink ? "Link" : "DisabledLink"}>
+                            Source code
+                        </a>
+                    </div>
                 </div>
             </div>
         </Modal>
