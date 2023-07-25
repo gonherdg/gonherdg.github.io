@@ -1,5 +1,6 @@
 .Company {
   text-align: "center";
+  min-width: 40%;
 }
 .Image {
   width: 250px;
@@ -8,7 +9,10 @@
 }
 
 @media only screen and (max-width: 600px) {
-  .Company{
+  .Company h3 {
+    margin: 0px;
+    padding: 0px;
+    font-size: 20px;
   }
 
   .Image {
