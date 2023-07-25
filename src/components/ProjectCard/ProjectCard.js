@@ -73,6 +73,15 @@ function ProjectCard(props) {
                     )}
                 </div>
             </div>
+            <div className="ProjectCard__tagbar">
+                {techTags && (
+                    <div className="TagContainer">
+                        {techTags.split(";").map((item, index, arr) => (
+                            <div className="Tag">{item}</div>
+                        ))}
+                    </div>
+                )}
+            </div>
 
             {description && isModalOpen && (
                 <DescriptionModal

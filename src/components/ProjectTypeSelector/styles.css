@@ -1,0 +1,49 @@
+.SelectorContainer {
+  margin-bottom: 60px;
+}
+
+.SelectorButton {
+  padding-left: 18px;
+  padding-right: 18px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  margin-left: 10px;
+  border-radius: 38px;
+  border: 0px solid var(--primary);
+  color: var(--primary-font);
+  width: 110px;
+}
+
+.ButtonOn {
+  background: var(--highlight-font);
+}
+
+.ButtonOff {
+  background: var(--grey);
+}
+
+.SelectorContainer > button:nth-of-type(1) {
+	color:#FFF;
+  border-radius: 20px 0px 0px 20px;
+}
+.SelectorContainer > button:nth-of-type(1):hover {
+	background: var(--highlight-font-light);
+}
+
+.SelectorContainer > button:nth-of-type(2) {
+	color:#FFF;
+  border-radius: 0px 0px 0px 0px;
+}
+.SelectorContainer > button:nth-of-type(2):hover {
+	background: var(--highlight-font-light);
+}
+
+.SelectorContainer > button:nth-of-type(3) {
+	color:#FFF;
+  border-radius: 0px 20px 20px 0px;
+}
+.SelectorContainer > button:nth-of-type(3):hover {
+  background: var(--highlight-font-light);
+
+;
+}

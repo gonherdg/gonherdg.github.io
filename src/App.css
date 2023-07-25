@@ -13,7 +13,8 @@
 
 
 :root {
-  --primary:  #FFC6A0; /* #E3D0A4; /*#10A050F9;/* #7510F7F9; /* #1e90ff; */
+  --primary: #FFC6A0; /* #E3D0A4; /*#10A050F9;/* #7510F7F9; /* #1e90ff; */
+  --primary-focus: #FF9832;
   --secondary: #FFF; /* #FDC; */
   --terceary: #282c34;
   --highlight: #C5C5E2;
@@ -31,6 +32,9 @@
   --highlight-font-light: #F82;
 
   --button-hover-green: #10C050F9;
+
+  --white: #FFF;
+  --grey: #666;
 }
 
 
