@@ -1,7 +1,7 @@
 import "../App.css";
 import "./Main.css";
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import DescriptionModal from "../components/DescriptionModal/DescriptionModal.js";
 
 // Misc icons
@@ -87,6 +87,16 @@ const Main = () => {
     const projectTypeSelectorHandler = (selected) => {
         setProjectTypeSelected(selected);
     };
+
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    const projectType = urlParams.get("projects");
+
+    useEffect(() => {
+        if (projectType && projectType !== projectTypeSelected) {
+            setProjectTypeSelected(projectType);
+        }
+    }, []);
 
     return (
         <div className="App">

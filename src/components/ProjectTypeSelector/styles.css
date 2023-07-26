@@ -7,8 +7,8 @@
   padding-right: 18px;
   padding-top: 9px;
   padding-bottom: 9px;
-  margin-left: 3px;
-  margin-right: 3px;
+  margin-left: 2px;
+  margin-right: 2px;
   border-radius: 38px;
   border: 0px solid var(--primary);
   color: var(--primary-font);
@@ -45,6 +45,14 @@
 }
 .SelectorContainer > button:nth-of-type(3):hover {
   background: var(--highlight-font-light);
+}
 
-;
+@media only screen and (max-width: 400px) {
+  .SelectorContainer {
+    margin-bottom: 45px;
+  }
+  
+  .SelectorButton {
+    width: 96px;
+  }
 }
