@@ -25,6 +25,12 @@ function ProjectCard(props) {
         setIsModalOpen(false);
     };
 
+    const handleImageClick = () => {
+        if (demoLink) {
+            window.open(demoLink, "_blank");
+        }
+    };
+
     return (
         <div className="ProjectCard">
             <a href={webLink} target="_blank" rel="noreferrer">
@@ -32,6 +38,7 @@ function ProjectCard(props) {
                     src={imageSrc}
                     alt={title}
                     className="ProjectCard__image"
+                    onClick={handleImageClick}
                 />
             </a>
             <div className="ProjectCard__bar">
