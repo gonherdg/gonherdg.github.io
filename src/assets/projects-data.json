@@ -1,7 +1,7 @@
 {
     "projects": [
         {
-            "type": "web",
+            "category": "web",
             "title": "Social Hub",
             "imageURL": "/images/myprojects/SocialHub/SocialHub_2.png",
             "sourceLink": "https://github.com/gonherdg/react-social-hub",
@@ -10,7 +10,7 @@
             "demoLink": "https://socialhub.gonherdg.eu.org"
         },
         {
-            "type": "web",
+            "category": "web",
             "title": "A las ñapis",
             "imageURL": "/images/myprojects/dummy_600x400_ffffff_cccccc_coming-soon.png",
             "sourceLink": "",
@@ -19,7 +19,7 @@
             "demoLink": ""
         },
         {
-            "type": "web",
+            "category": "web",
             "title": "Word finder",
             "imageURL": "/images/myprojects/dummy_600x400_ffffff_cccccc_coming-soon.png",
             "sourceLink": "",
@@ -28,16 +28,16 @@
             "demoLink": ""
         },
         {
-            "type": "mobile",
+            "category": "mobile",
             "title": "Investor Simulator",
-            "imageURL": "/images/myprojects/dummy_600x400_ffffff_cccccc_coming-soon.png",
+            "imageURL": "/images/myprojects/InvestorSim/InvestorSim.png",
             "sourceLink": "https://github.com/gonherdg/invest-sim-react-native",
             "description": "(Coming soon)",
             "techTags": "React Native",
             "demoLink": ""
         },
         {
-            "type": "game",
+            "category": "games",
             "title": "Aprendo la hora",
             "imageURL": "/images/myprojects/Aprendo la hora/Aprendo La Hora Mickey InGame.png",
             "sourceLink": "",
@@ -46,7 +46,7 @@
             "demoLink": ""
         },
         {
-            "type": "game",
+            "category": "games",
             "title": "PoC:\nProcedural terrain",
             "imageURL": "/images/myprojects/Terrenos Godot/nivel_pvp.png",
             "sourceLink": "",
@@ -55,7 +55,7 @@
             "demoLink": ""
         },
         {
-            "type": "game",
+            "category": "games",
             "title": "PoC:\nSpaceship movements",
             "imageURL": "/images/myprojects/PoC Avion/avion-2.jpg",
             "sourceLink": "",
@@ -64,7 +64,7 @@
             "demoLink": ""
         },
         {
-            "type": "game",
+            "category": "games",
             "title": "PoC:\nPortals",
             "imageURL": "/images/myprojects/PoC Portales/godot-portaloid-scene-6.jpg",
             "sourceLink": "",
@@ -73,7 +73,7 @@
             "demoLink": ""
         },
         {
-            "type": "game",
+            "category": "games",
             "title": "Memotest",
             "imageURL": "/images/myprojects/Minijuegos/memo-0.jpg",
             "sourceLink": "",
@@ -82,7 +82,7 @@
             "demoLink": ""
         },
         {
-            "type": "game",
+            "category": "games",
             "title": "Trivia",
             "imageURL": "/images/myprojects/Minijuegos/trivia-0.jpg",
             "sourceLink": "",
@@ -91,7 +91,7 @@
             "demoLink": ""
         },
         {
-            "type": "game",
+            "category": "games",
             "title": "Puzzle",
             "imageURL": "/images/myprojects/Minijuegos/puzzle-2.jpg",
             "sourceLink": "",
@@ -100,7 +100,7 @@
             "demoLink": ""
         },
         {
-            "type": "game",
+            "category": "games",
             "title": "Complete the concept",
             "imageURL": "/images/myprojects/Minijuegos/unir-1.jpg",
             "sourceLink": "",
@@ -109,7 +109,7 @@
             "demoLink": ""
         },
         {
-            "type": "game",
+            "category": "games",
             "title": "Simon",
             "imageURL": "/images/myprojects/Minijuegos/simon-0.jpg",
             "sourceLink": "",
@@ -118,7 +118,7 @@
             "demoLink": ""
         },
         {
-            "type": "game",
+            "category": "games",
             "title": "Water game",
             "imageURL": "/images/myprojects/Aysa/aysa_2.jpg",
             "sourceLink": "",
@@ -127,7 +127,7 @@
             "demoLink": ""
         },
         {
-            "type": "game",
+            "category": "gamess",
             "title": "B9",
             "imageURL": "/images/myprojects/B9/b9-1.jpg",
             "sourceLink": "",
@@ -136,7 +136,7 @@
             "demoLink": ""
         },
         {
-            "type": "game",
+            "category": "games",
             "title": "Dr. Mario Clone",
             "imageURL": "/images/myprojects/DrMarioClone/drmario-6.jpg",
             "sourceLink": "",
@@ -145,7 +145,7 @@
             "demoLink": ""
         },
         {
-            "type": "game",
+            "category": "games",
             "title": "Shot in the Dark",
             "imageURL": "/images/myprojects/dummy_600x400_ffffff_cccccc_coming-soon.png",
             "sourceLink": "",
@@ -154,7 +154,7 @@
             "demoLink": ""
         },
         {
-            "type": "game",
+            "category": "games",
             "title": "Ruleta",
             "imageURL": "/images/myprojects/dummy_600x400_ffffff_cccccc_coming-soon.png",
             "sourceLink": "",
@@ -163,7 +163,7 @@
             "demoLink": ""
         },
         {
-            "type": "game",
+            "category": "games",
             "title": "Siv",
             "imageURL": "/images/myprojects/dummy_600x400_ffffff_cccccc_coming-soon.png",
             "sourceLink": "",
@@ -172,7 +172,7 @@
             "demoLink": ""
         },
         {
-            "type": "game",
+            "category": "games",
             "title": "Tiburon3D",
             "imageURL": "/images/myprojects/dummy_600x400_ffffff_cccccc_coming-soon.png",
             "sourceLink": "",
@@ -181,7 +181,7 @@
             "demoLink": ""
         },
         {
-            "type": "game",
+            "category": "games",
             "title": "Galuxian WIP",
             "imageURL": "/images/myprojects/dummy_600x400_ffffff_cccccc_coming-soon.png",
             "sourceLink": "",
@@ -190,7 +190,7 @@
             "demoLink": ""
         },
         {
-            "type": "game",
+            "category": "games",
             "title": "Tiny Art",
             "imageURL": "/images/myprojects/dummy_600x400_ffffff_cccccc_coming-soon.png",
             "sourceLink": "",
@@ -199,7 +199,7 @@
             "demoLink": ""
         },
         {
-            "type": "game",
+            "category": "games",
             "title": "Truco Online WIP",
             "imageURL": "/images/myprojects/dummy_600x400_ffffff_cccccc_coming-soon.png",
             "sourceLink": "",
@@ -208,7 +208,7 @@
             "demoLink": ""
         },
         {
-            "type": "game",
+            "category": "games",
             "title": "Mio Kill",
             "imageURL": "/images/myprojects/dummy_600x400_ffffff_cccccc_coming-soon.png",
             "sourceLink": "",
@@ -217,7 +217,7 @@
             "demoLink": ""
         },
         {
-            "type": "game",
+            "category": "games",
             "title": "Open Voxel Editor WIP",
             "imageURL": "/images/myprojects/dummy_600x400_ffffff_cccccc_coming-soon.png",
             "sourceLink": "",

@@ -219,66 +219,21 @@ const Main = () => {
                             projectTypeSelectorHandler
                         }></ProjectTypeSelector>
                     <div className="ProjectGrid">
-                        {/* WEB SECTION */}
-                        {projectTypeSelected === "web" && (
-                            <>
-                                {projectsData.projects.map((v, i) => {
-                                    if (v.type === "web") {
-                                        return (
-                                            <ProjectCard
-                                                title={v.title}
-                                                imageSrc={v.imageURL}
-                                                sourceLink={v.sourceLink}
-                                                description={v.description}
-                                                techTags={v.techTags}
-                                                demoLink={
-                                                    v.demoLink
-                                                }></ProjectCard>
-                                        );
-                                    }
-                                })}
-                            </>
-                        )}
-                        {/* MOBILE SECTION */}
-                        {projectTypeSelected === "mobile" && (
-                            <>
-                                {projectsData.projects.map((v, i) => {
-                                    if (v.type === "mobile") {
-                                        return (
-                                            <ProjectCard
-                                                title={v.title}
-                                                imageSrc={v.imageURL}
-                                                sourceLink={v.sourceLink}
-                                                description={v.description}
-                                                techTags={v.techTags}
-                                                demoLink={
-                                                    v.demoLink
-                                                }></ProjectCard>
-                                        );
-                                    }
-                                })}
-                            </>
-                        )}
-                        {/* GAMES SECTION */}
-                        {projectTypeSelected === "games" && (
-                            <>
-                                {projectsData.projects.map((v, i) => {
-                                    if (v.type === "game") {
-                                        return (
-                                            <ProjectCard
-                                                title={v.title}
-                                                imageSrc={v.imageURL}
-                                                sourceLink={v.sourceLink}
-                                                description={v.description}
-                                                techTags={v.techTags}
-                                                demoLink={
-                                                    v.demoLink
-                                                }></ProjectCard>
-                                        );
-                                    }
-                                })}
-                            </>
-                        )}
+                        {projectsData.projects.map((v, i) => {
+                            return (
+                                <>
+                                    {v.category === projectTypeSelected && (
+                                        <ProjectCard
+                                            title={v.title}
+                                            imageSrc={v.imageURL}
+                                            sourceLink={v.sourceLink}
+                                            description={v.description}
+                                            techTags={v.techTags}
+                                            demoLink={v.demoLink}></ProjectCard>
+                                    )}
+                                </>
+                            );
+                        })}
                     </div>
                 </div>
 
