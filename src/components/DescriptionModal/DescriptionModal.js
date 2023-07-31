@@ -48,7 +48,9 @@ const ProjectDescriptionModal = ({
                     {techTags && (
                         <div className="TagContainer">
                             {techTags.split(";").map((item, index, arr) => (
-                                <span className="Tag">{item}</span>
+                                <span key={item} className="Tag">
+                                    {item}
+                                </span>
                             ))}
                         </div>
                     )}

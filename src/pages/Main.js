@@ -218,11 +218,11 @@ const Main = () => {
                         onClick={
                             projectTypeSelectorHandler
                         }></ProjectTypeSelector>
-                    <div className="ProjectGrid">
-                        {projectsData.projects.map((v, i) => {
-                            return (
-                                <>
-                                    {v.category === projectTypeSelected && (
+                    <ul className="ProjectGrid">
+                        {projectsData.projects.map(
+                            (v, i) =>
+                                v.category === projectTypeSelected && (
+                                    <li key={v.title}>
                                         <ProjectCard
                                             title={v.title}
                                             imageSrc={v.imageURL}
@@ -230,11 +230,10 @@ const Main = () => {
                                             description={v.description}
                                             techTags={v.techTags}
                                             demoLink={v.demoLink}></ProjectCard>
-                                    )}
-                                </>
-                            );
-                        })}
-                    </div>
+                                    </li>
+                                )
+                        )}
+                    </ul>
                 </div>
 
                 <div className="CompaniesIWorkedFor">

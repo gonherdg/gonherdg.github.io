@@ -16,12 +16,10 @@ function ProjectCard(props) {
     const [isModalOpen, setIsModalOpen] = useState(false);
 
     const openModal = () => {
-        console.log("ClICK");
         setIsModalOpen(true);
     };
 
     const closeModal = () => {
-        console.log("CLOSE");
         setIsModalOpen(false);
     };
 
@@ -82,11 +80,13 @@ function ProjectCard(props) {
             </div>
             <div className="ProjectCard__tagbar">
                 {techTags && (
-                    <div className="TagContainer">
+                    <ul className="TagContainer">
                         {techTags.split(";").map((item, index, arr) => (
-                            <div className="Tag">{item}</div>
+                            <li key={item} className="Tag">
+                                {item}
+                            </li>
                         ))}
-                    </div>
+                    </ul>
                 )}
             </div>
 
