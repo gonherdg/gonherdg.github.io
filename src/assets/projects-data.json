@@ -1,0 +1,229 @@
+{
+    "projects": [
+        {
+            "type": "web",
+            "title": "Social Hub",
+            "imageURL": "/images/myprojects/SocialHub/SocialHub_2.png",
+            "sourceLink": "https://github.com/gonherdg/react-social-hub",
+            "description": "Social Hub is a reduced version of any social media app. The purpose of the project is to demonstrate the use of different technologies to create an app that includes a login/logout/signup system with JWT and Google OAuth service.",
+            "techTags": "React;Javascript;Github Pages;AWS Lambda;Serverless;NodeJS;ExpressJS",
+            "demoLink": "https://socialhub.gonherdg.eu.org"
+        },
+        {
+            "type": "web",
+            "title": "A las ñapis",
+            "imageURL": "/images/myprojects/dummy_600x400_ffffff_cccccc_coming-soon.png",
+            "sourceLink": "",
+            "description": "This is one of my first creations as a website. As I was already used to make videogames, why not try to make a new one to play on a browser?",
+            "techTags": "HTML;CSS;Web Sockets",
+            "demoLink": ""
+        },
+        {
+            "type": "web",
+            "title": "Word finder",
+            "imageURL": "/images/myprojects/dummy_600x400_ffffff_cccccc_coming-soon.png",
+            "sourceLink": "",
+            "description": "",
+            "techTags": "HTML;CSS",
+            "demoLink": ""
+        },
+        {
+            "type": "mobile",
+            "title": "Investor Simulator",
+            "imageURL": "/images/myprojects/dummy_600x400_ffffff_cccccc_coming-soon.png",
+            "sourceLink": "https://github.com/gonherdg/invest-sim-react-native",
+            "description": "(Coming soon)",
+            "techTags": "React Native",
+            "demoLink": ""
+        },
+        {
+            "type": "game",
+            "title": "Aprendo la hora",
+            "imageURL": "/images/myprojects/Aprendo la hora/Aprendo La Hora Mickey InGame.png",
+            "sourceLink": "",
+            "description": "(Coming soon)",
+            "techTags": "Unity",
+            "demoLink": ""
+        },
+        {
+            "type": "game",
+            "title": "PoC:\nProcedural terrain",
+            "imageURL": "/images/myprojects/Terrenos Godot/nivel_pvp.png",
+            "sourceLink": "",
+            "description": "(Coming soon)",
+            "techTags": "Godot 4",
+            "demoLink": ""
+        },
+        {
+            "type": "game",
+            "title": "PoC:\nSpaceship movements",
+            "imageURL": "/images/myprojects/PoC Avion/avion-2.jpg",
+            "sourceLink": "",
+            "description": "(Coming soon)",
+            "techTags": "Godot 4",
+            "demoLink": ""
+        },
+        {
+            "type": "game",
+            "title": "PoC:\nPortals",
+            "imageURL": "/images/myprojects/PoC Portales/godot-portaloid-scene-6.jpg",
+            "sourceLink": "",
+            "description": "(Coming soon)",
+            "techTags": "Godot 4",
+            "demoLink": ""
+        },
+        {
+            "type": "game",
+            "title": "Memotest",
+            "imageURL": "/images/myprojects/Minijuegos/memo-0.jpg",
+            "sourceLink": "",
+            "description": "(Coming soon)",
+            "techTags": "Unity",
+            "demoLink": ""
+        },
+        {
+            "type": "game",
+            "title": "Trivia",
+            "imageURL": "/images/myprojects/Minijuegos/trivia-0.jpg",
+            "sourceLink": "",
+            "description": "(Coming soon)",
+            "techTags": "Unity",
+            "demoLink": ""
+        },
+        {
+            "type": "game",
+            "title": "Puzzle",
+            "imageURL": "/images/myprojects/Minijuegos/puzzle-2.jpg",
+            "sourceLink": "",
+            "description": "(Coming soon)",
+            "techTags": "Unity",
+            "demoLink": ""
+        },
+        {
+            "type": "game",
+            "title": "Complete the concept",
+            "imageURL": "/images/myprojects/Minijuegos/unir-1.jpg",
+            "sourceLink": "",
+            "description": "(Coming soon)",
+            "techTags": "Unity",
+            "demoLink": ""
+        },
+        {
+            "type": "game",
+            "title": "Simon",
+            "imageURL": "/images/myprojects/Minijuegos/simon-0.jpg",
+            "sourceLink": "",
+            "description": "(Coming soon)",
+            "techTags": "Unity",
+            "demoLink": ""
+        },
+        {
+            "type": "game",
+            "title": "Water game",
+            "imageURL": "/images/myprojects/Aysa/aysa_2.jpg",
+            "sourceLink": "",
+            "description": "(Coming soon)",
+            "techTags": "Unity",
+            "demoLink": ""
+        },
+        {
+            "type": "game",
+            "title": "B9",
+            "imageURL": "/images/myprojects/B9/b9-1.jpg",
+            "sourceLink": "",
+            "description": "(Coming soon)",
+            "techTags": "Unity",
+            "demoLink": ""
+        },
+        {
+            "type": "game",
+            "title": "Dr. Mario Clone",
+            "imageURL": "/images/myprojects/DrMarioClone/drmario-6.jpg",
+            "sourceLink": "",
+            "description": "(Coming soon)",
+            "techTags": "Unity",
+            "demoLink": ""
+        },
+        {
+            "type": "game",
+            "title": "Shot in the Dark",
+            "imageURL": "/images/myprojects/dummy_600x400_ffffff_cccccc_coming-soon.png",
+            "sourceLink": "",
+            "description": "(Coming soon)",
+            "techTags": "Unity",
+            "demoLink": ""
+        },
+        {
+            "type": "game",
+            "title": "Ruleta",
+            "imageURL": "/images/myprojects/dummy_600x400_ffffff_cccccc_coming-soon.png",
+            "sourceLink": "",
+            "description": "(Coming soon)",
+            "techTags": "Unity",
+            "demoLink": ""
+        },
+        {
+            "type": "game",
+            "title": "Siv",
+            "imageURL": "/images/myprojects/dummy_600x400_ffffff_cccccc_coming-soon.png",
+            "sourceLink": "",
+            "description": "(Coming soon)",
+            "techTags": "Unity",
+            "demoLink": ""
+        },
+        {
+            "type": "game",
+            "title": "Tiburon3D",
+            "imageURL": "/images/myprojects/dummy_600x400_ffffff_cccccc_coming-soon.png",
+            "sourceLink": "",
+            "description": "(Coming soon)",
+            "techTags": "Unity",
+            "demoLink": ""
+        },
+        {
+            "type": "game",
+            "title": "Galuxian WIP",
+            "imageURL": "/images/myprojects/dummy_600x400_ffffff_cccccc_coming-soon.png",
+            "sourceLink": "",
+            "description": "(Coming soon)",
+            "techTags": "Unity",
+            "demoLink": ""
+        },
+        {
+            "type": "game",
+            "title": "Tiny Art",
+            "imageURL": "/images/myprojects/dummy_600x400_ffffff_cccccc_coming-soon.png",
+            "sourceLink": "",
+            "description": "(Coming soon)",
+            "techTags": "Unity",
+            "demoLink": ""
+        },
+        {
+            "type": "game",
+            "title": "Truco Online WIP",
+            "imageURL": "/images/myprojects/dummy_600x400_ffffff_cccccc_coming-soon.png",
+            "sourceLink": "",
+            "description": "(Coming soon)",
+            "techTags": "Unity",
+            "demoLink": ""
+        },
+        {
+            "type": "game",
+            "title": "Mio Kill",
+            "imageURL": "/images/myprojects/dummy_600x400_ffffff_cccccc_coming-soon.png",
+            "sourceLink": "",
+            "description": "(Coming soon)",
+            "techTags": "Unity",
+            "demoLink": ""
+        },
+        {
+            "type": "game",
+            "title": "Open Voxel Editor WIP",
+            "imageURL": "/images/myprojects/dummy_600x400_ffffff_cccccc_coming-soon.png",
+            "sourceLink": "",
+            "description": "(Coming soon)",
+            "techTags": "Unity",
+            "demoLink": ""
+        }
+    ]
+}

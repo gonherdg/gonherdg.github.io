@@ -28,25 +28,6 @@ import prosegur_logo from "../assets/companies-logos/prosegur-logo-2.png";
 import innobaires_logo from "../assets/companies-logos/innobaires_logo.png";
 import fdvsolutions_logo from "../assets/companies-logos/fdv_solutions.png";
 
-// Import assets for showing my work
-import commingSoon from "../assets/myprojects/dummy_600x400_ffffff_cccccc_coming-soon.png";
-import socialHub_0 from "../assets/myprojects/SocialHub_2.png";
-import socialHub_1 from "../assets/myprojects/SocialHub_1.png";
-import investorSim from "../assets/myprojects/InvestorSim.png";
-import aprendoLaHora_0 from "../assets/myprojects/Aprendo la hora/Aprendo La Hora Mickey InGame.png";
-import poc_avion_0 from "../assets/myprojects/PoC Avion/avion-2.jpg";
-import poc_portals_0 from "../assets/myprojects/PoC Portales/godot-portaloid-scene-6.jpg";
-import poc_terrain_0 from "../assets/myprojects/Terrenos Godot/nivel_pvp.png";
-import water_game_0 from "../assets/myprojects/Aysa/aysa_2.jpg";
-import b9_0 from "../assets/myprojects/B9/b9-1.jpg";
-import drmarioclone_0 from "../assets/myprojects/DrMarioClone/drmario-6.jpg";
-
-import simon_0 from "../assets/myprojects/Minijuegos/simon-0.jpg";
-import trivia_0 from "../assets/myprojects/Minijuegos/trivia-0.jpg";
-import puzzle_0 from "../assets/myprojects/Minijuegos/puzzle-2.jpg";
-import unir_0 from "../assets/myprojects/Minijuegos/unir-1.jpg";
-import memo_0 from "../assets/myprojects/Minijuegos/memo-0.jpg";
-
 //import curvedLines from "../assets/curved_lines_modified.png";
 import WorkCell from "../components/WorkCell/WorkCell";
 import NavButton from "../components/NavButton/NavButton";
@@ -57,18 +38,24 @@ import ProjectTypeSelector from "../components/ProjectTypeSelector/ProjectTypeSe
 import { useTranslation } from "react-i18next";
 import { HashLink as Link } from "react-router-hash-link";
 
+import { useImage } from "../customHooks/useImage";
+import projectsData from "../assets/projects-data.json";
+
 const Main = () => {
     const { t } = useTranslation();
     const { i18n } = useTranslation();
 
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [projectTypeSelected, setProjectTypeSelected] = useState("web");
+    const [numOfProjectsToShow, setNumOfProjectsToShow] = useState(4);
 
     const linkedinProfileLink = "https://www.linkedin.com/in/gonzalodelgaudio/";
     const upworkProfileLink =
         "https://www.upwork.com/freelancers/~015bb5c8a4a1b92f4a";
     const githubProfileLink = "https://github.com/gonherdg";
     const fiverrProfileLink = "https://www.fiverr.com/gonzahdg";
+
+    //const projects = JSON.parse(projectsData);
 
     function changeLanguage(e) {
         i18n.changeLanguage(e.target.value);
@@ -108,6 +95,7 @@ const Main = () => {
                         Gonzalo
                         <div className="DivName"> Del Gaudio</div>
                     </div>
+
                     <div className="ButtonBar">
                         <div className="Lang">
                             <button
@@ -153,7 +141,6 @@ const Main = () => {
                             label={t("contact")}
                             linkTo="/#contact"></NavButton>
                     </div>
-
                     <div className="Options"></div>
                 </div>
 
@@ -235,146 +222,61 @@ const Main = () => {
                         {/* WEB SECTION */}
                         {projectTypeSelected === "web" && (
                             <>
-                                <ProjectCard
-                                    title="Social Hub"
-                                    imageSrc={socialHub_0}
-                                    sourceLink="https://github.com/gonherdg/react-social-hub"
-                                    description="Social Hub is a reduced version of any social media app. The purpose of the project is to demonstrate the use of different technologies to create an app that includes a login/logout/signup system with JWT and Google OAuth service, "
-                                    techTags="React;Javascript;Github Pages;AWS Lambda;Serverless;NodeJS;ExpressJS"
-                                    demoLink="https://socialhub.gonherdg.eu.org"></ProjectCard>
-                                <ProjectCard
-                                    title="A las ñapis"
-                                    imageSrc={commingSoon}
-                                    description="This is one of my first creations as a website. As I was already used to make videogames, why not try to make a new one to play on a browser?"
-                                    techTags="HTML;CSS;Web Sockets"></ProjectCard>
-                                <ProjectCard
-                                    title="Word finder"
-                                    imageSrc={commingSoon}
-                                    description=""
-                                    techTags=""></ProjectCard>
+                                {projectsData.projects.map((v, i) => {
+                                    if (v.type === "web") {
+                                        return (
+                                            <ProjectCard
+                                                title={v.title}
+                                                imageSrc={v.imageURL}
+                                                sourceLink={v.sourceLink}
+                                                description={v.description}
+                                                techTags={v.techTags}
+                                                demoLink={
+                                                    v.demoLink
+                                                }></ProjectCard>
+                                        );
+                                    }
+                                })}
                             </>
                         )}
-
                         {/* MOBILE SECTION */}
                         {projectTypeSelected === "mobile" && (
                             <>
-                                <ProjectCard
-                                    title="Investor Simulator"
-                                    imageSrc={investorSim}
-                                    sourceLink="https://github.com/gonherdg/invest-sim-react-native"
-                                    description="(Coming soon)"
-                                    techTags="React Native"></ProjectCard>
+                                {projectsData.projects.map((v, i) => {
+                                    if (v.type === "mobile") {
+                                        return (
+                                            <ProjectCard
+                                                title={v.title}
+                                                imageSrc={v.imageURL}
+                                                sourceLink={v.sourceLink}
+                                                description={v.description}
+                                                techTags={v.techTags}
+                                                demoLink={
+                                                    v.demoLink
+                                                }></ProjectCard>
+                                        );
+                                    }
+                                })}
                             </>
                         )}
-
-                        {/* GAME SECTION */}
+                        {/* GAMES SECTION */}
                         {projectTypeSelected === "games" && (
                             <>
-                                <ProjectCard
-                                    title="Aprendo la hora"
-                                    imageSrc={aprendoLaHora_0}
-                                    description=""
-                                    techTags="Unity"></ProjectCard>
-                                <ProjectCard
-                                    title={"PoC:\nProcedural terrain"}
-                                    imageSrc={poc_terrain_0}
-                                    description=""
-                                    techTags="Godot 4"></ProjectCard>
-                                <ProjectCard
-                                    title={"PoC:\nSpaceship movements"}
-                                    imageSrc={poc_avion_0}
-                                    description=""
-                                    techTags="Godot 4"></ProjectCard>
-                                <ProjectCard
-                                    title={"PoC:\nPortals"}
-                                    imageSrc={poc_portals_0}
-                                    description=""
-                                    techTags="Godot 4"></ProjectCard>
-                                <ProjectCard
-                                    title="Memotest"
-                                    imageSrc={memo_0}
-                                    description=""
-                                    techTags="Unity"></ProjectCard>
-                                <ProjectCard
-                                    title="Trivia"
-                                    imageSrc={trivia_0}
-                                    description=""
-                                    techTags="Unity"></ProjectCard>
-                                <ProjectCard
-                                    title="Puzzle"
-                                    imageSrc={puzzle_0}
-                                    description=""
-                                    techTags="Unity"></ProjectCard>
-                                <ProjectCard
-                                    title="Complete the concept"
-                                    imageSrc={unir_0}
-                                    description=""
-                                    techTags="Unity"></ProjectCard>
-                                <ProjectCard
-                                    title="Simon"
-                                    imageSrc={simon_0}
-                                    description=""
-                                    techTags="Unity"></ProjectCard>
-                                <ProjectCard
-                                    title="Water game"
-                                    imageSrc={water_game_0}
-                                    description=""
-                                    techTags="Unity"></ProjectCard>
-                                <ProjectCard
-                                    title="B9"
-                                    imageSrc={b9_0}
-                                    description=""
-                                    techTags="Unity"></ProjectCard>
-                                <ProjectCard
-                                    title="Dr. Mario Clone"
-                                    imageSrc={drmarioclone_0}
-                                    description=""
-                                    techTags="Unity"></ProjectCard>
-                                <ProjectCard
-                                    title="Shot in the Dark"
-                                    imageSrc={commingSoon}
-                                    description=""
-                                    techTags="Unity"></ProjectCard>
-                                <ProjectCard
-                                    title="Ruleta"
-                                    imageSrc={commingSoon}
-                                    description=""
-                                    techTags=""></ProjectCard>
-                                <ProjectCard
-                                    title="Siv"
-                                    imageSrc={commingSoon}
-                                    description=""
-                                    techTags="Unity"></ProjectCard>
-                                <ProjectCard
-                                    title="Tiburon3D"
-                                    imageSrc={commingSoon}
-                                    description=""
-                                    techTags="Godot 4"></ProjectCard>
-                                <ProjectCard
-                                    title="Galuxian WIP"
-                                    imageSrc={commingSoon}
-                                    description=""
-                                    techTags="Unity"></ProjectCard>
-                                <ProjectCard
-                                    title="Tiny Art"
-                                    imageSrc={commingSoon}
-                                    description=""
-                                    techTags="Unity"></ProjectCard>
-                                <ProjectCard
-                                    title="Truco Online WIP"
-                                    imageSrc={commingSoon}
-                                    description=""
-                                    techTags="Unity"></ProjectCard>
-                                <ProjectCard
-                                    title="Mio Kill"
-                                    imageSrc={commingSoon}
-                                    description=""
-                                    techTags="Unity"></ProjectCard>
-                                <ProjectCard
-                                    title="OpenVoxelEditor"
-                                    imageSrc={commingSoon}
-                                    description=""
-                                    techTags="Unity"></ProjectCard>
+                                {projectsData.projects.map((v, i) => {
+                                    if (v.type === "game") {
+                                        return (
+                                            <ProjectCard
+                                                title={v.title}
+                                                imageSrc={v.imageURL}
+                                                sourceLink={v.sourceLink}
+                                                description={v.description}
+                                                techTags={v.techTags}
+                                                demoLink={
+                                                    v.demoLink
+                                                }></ProjectCard>
+                                        );
+                                    }
+                                })}
                             </>
                         )}
                     </div>

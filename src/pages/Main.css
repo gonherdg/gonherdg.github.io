@@ -149,7 +149,7 @@ h3 {
 .PresentationAbstractImage {
   margin-top: 40px;
   background: linear-gradient(to top, var(--primary) 5%,
-              rgba(255,255,255, 1) 50%), url(../assets/curved_lines_modified.png);
+              rgba(255,255,255, 1) 50%), url(../assets/misc/curved_lines_modified.png);
   background: linear-gradient(to top, var(--primary) 5%, rgba(255,255,255,1) 50%);
   min-height: 260px;
   margin-bottom: 0px;
