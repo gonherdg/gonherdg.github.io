@@ -1,25 +1,11 @@
 {
   "files": {
-    "main.css": "/static/css/main.86f8a3cb.css",
-    "main.js": "/static/js/main.855a27e1.js",
+    "main.css": "/static/css/main.d259d307.css",
+    "main.js": "/static/js/main.54d0dc4d.js",
     "static/js/787.1348df21.chunk.js": "/static/js/787.1348df21.chunk.js",
-    "static/media/nivel_pvp.png": "/static/media/nivel_pvp.04cca89fa67d6c70baf4.png",
-    "static/media/Aprendo La Hora Mickey InGame.png": "/static/media/Aprendo La Hora Mickey InGame.bb1065076381d0a733a0.png",
-    "static/media/SocialHub_1.png": "/static/media/SocialHub_1.aaeda6b47eccfd8ca6b1.png",
-    "static/media/SocialHub_2.png": "/static/media/SocialHub_2.155cd76578064f62a801.png",
     "static/media/5seis_verde.jpg": "/static/media/5seis_verde.16bdfadfd81a371ecc8a.jpg",
-    "static/media/godot-portaloid-scene-6.jpg": "/static/media/godot-portaloid-scene-6.9145dc494b011af97b44.jpg",
-    "static/media/avion-2.jpg": "/static/media/avion-2.9fa40ee38594349a44d7.jpg",
-    "static/media/b9-1.jpg": "/static/media/b9-1.e8bc31ea2ec4fbe4011a.jpg",
-    "static/media/puzzle-2.jpg": "/static/media/puzzle-2.5a1af9be63eb7a34daa2.jpg",
-    "static/media/memo-0.jpg": "/static/media/memo-0.2815276b38ec08ca608c.jpg",
-    "static/media/aysa_2.jpg": "/static/media/aysa_2.2979fd217836ca9e7025.jpg",
-    "static/media/drmario-6.jpg": "/static/media/drmario-6.988eac1a227bc6e5efb7.jpg",
-    "static/media/unir-1.jpg": "/static/media/unir-1.8db42809bf4c396cf3b1.jpg",
     "static/media/curved_lines_modified.png": "/static/media/curved_lines_modified.24863412ab26d11082ba.png",
     "static/media/prosegur-logo-2.png": "/static/media/prosegur-logo-2.d19b5599aeeeb8b094a3.png",
-    "static/media/trivia-0.jpg": "/static/media/trivia-0.2b7167dfb2a414d3cd66.jpg",
-    "static/media/simon-0.jpg": "/static/media/simon-0.bcdb601d7ff67a619eb3.jpg",
     "static/media/web-settings.png": "/static/media/web-settings.209cab6a5dbe06d92c7c.png",
     "static/media/inmental_logo.png": "/static/media/inmental_logo.b258a2e4e3b0ef109aec.png",
     "static/media/programmer.png": "/static/media/programmer.f4ef8ede63879893de9f.png",
@@ -32,16 +18,15 @@
     "static/media/EuroStyle Normal.woff": "/static/media/EuroStyle Normal.1f243024b9649e5b9d64.woff",
     "static/media/ux.png": "/static/media/ux.ffa3e0dd754dc923e50b.png",
     "static/media/fdv_solutions.png": "/static/media/fdv_solutions.9f7e8191841927654fac.png",
-    "static/media/InvestorSim.png": "/static/media/InvestorSim.13f9cd04c591808ad106.png",
     "static/media/linkedin_c.png": "/static/media/linkedin_c.2ca2ab7cdf0da01c368d.png",
     "static/media/fiverr.png": "/static/media/fiverr.bf6e3d72bf7abf7ae944.png",
     "index.html": "/index.html",
-    "main.86f8a3cb.css.map": "/static/css/main.86f8a3cb.css.map",
-    "main.855a27e1.js.map": "/static/js/main.855a27e1.js.map",
+    "main.d259d307.css.map": "/static/css/main.d259d307.css.map",
+    "main.54d0dc4d.js.map": "/static/js/main.54d0dc4d.js.map",
     "787.1348df21.chunk.js.map": "/static/js/787.1348df21.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.86f8a3cb.css",
-    "static/js/main.855a27e1.js"
+    "static/css/main.d259d307.css",
+    "static/js/main.54d0dc4d.js"
   ]
 }
