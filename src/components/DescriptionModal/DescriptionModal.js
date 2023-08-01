@@ -30,7 +30,8 @@ const ProjectDescriptionModal = ({
         <Modal
             isOpen={isOpen}
             onRequestClose={onClose}
-            contentLabel="Project description">
+            contentLabel="Project description"
+            className={"Modal"}>
             <div className="TopView">
                 <h2>{title}</h2>
                 <button className="CrossButton" onClick={onClose}>
