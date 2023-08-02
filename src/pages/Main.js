@@ -77,7 +77,7 @@ const Main = () => {
 
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
-    const projectType = urlParams.get("projects");
+    const projectType = urlParams.get("portfolio");
 
     useEffect(() => {
         if (projectType && projectType !== projectTypeSelected) {
