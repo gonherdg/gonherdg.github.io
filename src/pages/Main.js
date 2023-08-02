@@ -14,8 +14,8 @@ import game_icon from "../assets/icons/3d-game.png";
 
 // Social Networks' logos
 import github from "../assets/social-logos/github.png";
-import linkedin from "../assets/social-logos/linkedin_c.png";
-import upwork from "../assets/social-logos/upwork_b.png";
+import linkedin from "../assets/social-logos/linkedin.png";
+import upwork from "../assets/social-logos/upwork.png";
 import fiverr from "../assets/social-logos/fiverr.png";
 
 // Company logos

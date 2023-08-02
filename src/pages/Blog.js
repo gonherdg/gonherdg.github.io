@@ -9,8 +9,8 @@ import backend_icon_b from "../assets/icons/web-settings.png";
 import game_icon from "../assets/icons/3d-game.png";
 
 import github from "../assets/social-logos/github.png";
-import linkedin from "../assets/social-logos/linkedin_c.png";
-import upwork from "../assets/social-logos/upwork_b.png";
+import linkedin from "../assets/social-logos/linkedin.png";
+import upwork from "../assets/social-logos/upwork.png";
 import fiverr from "../assets/social-logos/fiverr.png";
 
 import accenture_logo from "../assets/companies-logos/Accenture-logo.png";
