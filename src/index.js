@@ -3,7 +3,10 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 // import App from './App';
 import Main from './pages/Main';
+import ErrorPage from './pages/ErrorPage';
 import Blog from './pages/Blog';
+import SivProject from './pages/SivProject/SivProject';
+import SivPrivacyPolicy from './pages/SivProject/SivPrivacyPolicy';
 import reportWebVitals from './reportWebVitals';
 import './i18n/config';
 import {
@@ -15,11 +18,16 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Main/>,
+    errorElement: <ErrorPage/>
   },
   {
-    path: "/blog",
+    path: "blog",
     element: <Blog/>,
   },
+  {
+    path: "siv/privacy-policy",
+    element: <SivPrivacyPolicy/>
+  }
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
