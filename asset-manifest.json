@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.1e061cfc.css",
-    "main.js": "/static/js/main.ad935f9f.js",
+    "main.js": "/static/js/main.aafb0d35.js",
     "static/js/787.ad3f21fb.chunk.js": "/static/js/787.ad3f21fb.chunk.js",
     "static/media/MonedaG4.png": "/static/media/MonedaG4.b848151305bc55ada76a.png",
     "static/media/5seis_verde.jpg": "/static/media/5seis_verde.16bdfadfd81a371ecc8a.jpg",
@@ -22,11 +22,11 @@
     "static/media/fdv_solutions.png": "/static/media/fdv_solutions.9f7e8191841927654fac.png",
     "index.html": "/index.html",
     "main.1e061cfc.css.map": "/static/css/main.1e061cfc.css.map",
-    "main.ad935f9f.js.map": "/static/js/main.ad935f9f.js.map",
+    "main.aafb0d35.js.map": "/static/js/main.aafb0d35.js.map",
     "787.ad3f21fb.chunk.js.map": "/static/js/787.ad3f21fb.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1e061cfc.css",
-    "static/js/main.ad935f9f.js"
+    "static/js/main.aafb0d35.js"
   ]
 }
