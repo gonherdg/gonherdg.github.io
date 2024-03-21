@@ -1,0 +1,58 @@
+.Privacy-Policy {
+    white-space: pre-wrap;
+    unicode-bidi: embed;
+    color: #111;
+    text-align: left;
+    margin: 35px;
+    padding: 35px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    border-radius: 25px;
+    background-color: #fff;
+}
+
+.Privacy-Policy-a{
+    color: blue;
+}
+
+
+.PPHeader1 {
+    font-size: 26px;
+    font-family: Arial !important;
+    color: #000000 !important;
+    font-weight: 600;
+}
+
+.PPHeader2 {
+    font-size: 19px;
+    font-family: Arial !important;
+    color: #000000 !important;
+    font-weight: 600;
+}
+
+.PPHeader3 {
+    font-size: 17px;
+    font-family: Arial !important;
+    color: #222 !important;
+    font-weight: 600;
+}
+
+.PPtext {
+    font-size: 14px;
+    font-family: Arial !important;
+    color: #666 !important;
+    line-height: 1.5;
+    list-style-type: square;
+}
+
+.PPit {
+    text-decoration: ;
+}
+
+ul {
+    list-style-type: square;
+}
+
+.PPbold {
+    font-weight: 600;
+}

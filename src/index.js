@@ -25,6 +25,10 @@ const router = createBrowserRouter([
     element: <Blog/>,
   },
   {
+    path: "siv",
+    element: <SivProject/>
+  },
+  {
     path: "siv/privacy-policy",
     element: <SivPrivacyPolicy/>
   }

@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-const Main = () => {
-    const { t } = useTranslation();
-    const { i18n } = useTranslation();
+const ErrorPage = () => {
 
     return (
         <div className="App">
@@ -12,3 +10,5 @@ const Main = () => {
         </div>
     );
 }
+
+export default ErrorPage;
