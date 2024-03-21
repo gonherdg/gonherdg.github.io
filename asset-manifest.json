@@ -1,9 +1,12 @@
 {
   "files": {
-    "main.css": "/static/css/main.40f2f28c.css",
-    "main.js": "/static/js/main.5ace512d.js",
+    "main.css": "/static/css/main.cbc2d9a3.css",
+    "main.js": "/static/js/main.351c86c7.js",
     "static/js/787.1348df21.chunk.js": "/static/js/787.1348df21.chunk.js",
+    "static/media/MonedaG4.png": "/static/media/MonedaG4.b848151305bc55ada76a.png",
     "static/media/5seis_verde.jpg": "/static/media/5seis_verde.16bdfadfd81a371ecc8a.jpg",
+    "static/media/Siv_512x512.png": "/static/media/Siv_512x512.6f3c6387d6774d1fcb65.png",
+    "static/media/screenshot-0.jpg": "/static/media/screenshot-0.0fbc15f09c11423827bb.jpg",
     "static/media/curved_lines_modified.png": "/static/media/curved_lines_modified.24863412ab26d11082ba.png",
     "static/media/prosegur-logo-2.png": "/static/media/prosegur-logo-2.d19b5599aeeeb8b094a3.png",
     "static/media/web-settings.png": "/static/media/web-settings.209cab6a5dbe06d92c7c.png",
@@ -18,12 +21,12 @@
     "static/media/ux.png": "/static/media/ux.ffa3e0dd754dc923e50b.png",
     "static/media/fdv_solutions.png": "/static/media/fdv_solutions.9f7e8191841927654fac.png",
     "index.html": "/index.html",
-    "main.40f2f28c.css.map": "/static/css/main.40f2f28c.css.map",
-    "main.5ace512d.js.map": "/static/js/main.5ace512d.js.map",
+    "main.cbc2d9a3.css.map": "/static/css/main.cbc2d9a3.css.map",
+    "main.351c86c7.js.map": "/static/js/main.351c86c7.js.map",
     "787.1348df21.chunk.js.map": "/static/js/787.1348df21.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.40f2f28c.css",
-    "static/js/main.5ace512d.js"
+    "static/css/main.cbc2d9a3.css",
+    "static/js/main.351c86c7.js"
   ]
 }
